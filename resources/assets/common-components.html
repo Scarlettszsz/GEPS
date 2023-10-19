@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공무원연금공단</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="common-wrap">
+        <header class="header">
+            <h1>공통검포넌트</h1>
+        </header>
+        <section class="common-body">
+            <aside>
+                <ul>
+                    <li>
+                        <a href="#">BUTTON</a>
+                    </li>
+                    <li>
+                        <a href="#">MODAL</a>
+                    </li>
+                </ul>
+            </aside>
+            <section class="common-element">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>사이즈별/컬러별</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-primary">BUTTON</button>
+                                    <button type="button" class="btn btn-md btn-gray">BUTTON</button>
+                                    <button type="button" class="btn btn-lg btn-outline-primary">BUTTON</button>
+                                    <button type="button" class="btn btn-lg btn-outline-gray">BUTTON</button>
+                                    <button type="button" class="btn-r btn-sm btn-primary">BUTTON</button>
+                                    <button type="button" class="btn-r btn-md btn-gray">BUTTON</button>
+                                    <button type="button" class="btn-r btn-lg btn-outline-primary">BUTTON</button>
+                                    <button type="button" class="btn-r btn-lg btn-outline-gray">BUTTON</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>MODAL</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-primary open-modal"
+                                        data-modal-id="smModal">SM</button>
+                                    <button type="button" class="btn btn-sm btn-primary open-modal"
+                                        data-modal-id="mdModal">MD</button>
+                                    <button type="button" class="btn btn-sm btn-primary open-modal"
+                                        data-modal-id="lgModal">LG</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+    </div>
+
+    <!-- S:SM -->
+    <div id="smModal" class="modal-wrap modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">비밀번호 재설정</h3>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <div class="btn-group">
+                    <button type="button" class="btn-r btn-modal-close btn-close">취소</button>
+                    <button type="button" class="btn-r btn-modal-check">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E:SM -->
+
+    <!-- S:MD -->
+    <div id="mdModal" class="modal-wrap modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">비밀번호 재설정</h3>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <div class="btn-group">
+                    <button type="button" class="btn-r btn-modal-close btn-close">취소</button>
+                    <button type="button" class="btn-r btn-modal-check">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E:MD -->
+
+    <!-- S:LG -->
+    <div id="lgModal" class="modal-wrap modal-lg">
+        <div class="modal-content type2">
+            <div class="modal-header">
+                <h3 class="modal-title">비밀번호 재설정</h3>
+                <i class="i i-close"></i>
+            </div>
+            <div class="modal-body">
+                test
+            </div>
+            <div class="modal-footer">
+                <div class="btn-group">
+                    <button type="button" class="btn-r btn-modal-close btn-close">취소</button>
+                    <button type="button" class="btn-r btn-modal-check">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E:LG -->
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

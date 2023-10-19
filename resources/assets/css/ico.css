@@ -3,3 +3,9 @@
 .i {
     display: inline-block;
 }
+
+.i-close {
+    background: url(../img/ico/i-close.svg);
+    height: 24px;
+    width: 24px;
+}
