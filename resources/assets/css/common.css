@@ -142,6 +142,7 @@ textarea {
 .common-element tr:nth-child(1) {
     height: 40px;
 }
+
 .common-element tr td {
     font-size: 14px;
 }
@@ -298,7 +299,6 @@ button:focus {
 /* **************************************** *
  * MODAL
  * **************************************** */
-/* 모달 */
 .modal-wrap {
     display: none;
     position: fixed;
