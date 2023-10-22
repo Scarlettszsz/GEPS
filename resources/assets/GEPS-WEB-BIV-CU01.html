@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공무원연금공단</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <div class="container d_flex jcfe aic">
+                <div class="user_wrap">
+                    <div class="user_info">
+                        <span class="ico user">user</span>
+                        <span class="input_val under_line">관리자</span>
+                        <span>님 (접속 : <span>2023-07-07 15:19:02</span>)</span>
+                    </div>
+                    <div class="timer">
+                        <span class="ico clock">clock</span>
+                        <span class="input_val">00:29:49</span>
+                    </div>
+                    <button type="button" class="btn btn-outline-gray">로그아웃</button>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container d_flex jcsb aic">
+                <span class="ico logo">공무원연금공단</span>
+                <ul class="nav_wrap">
+                    <li class="active">신상조사</li>
+                    <li>생체정보 등록현황</li>
+                    <li>VC 발급현황</li>
+                    <li>통계조회</li>
+                    <li>통계조회</li>
+                    <li>시스템 관리</li>
+                    <li><span class="ico menu">토글</span></li>
+                </ul>
+            </div>
+        </div>
+    </head>
+    <div class="content">
+        <div class="search_wrapper">
+            <div class="container">
+                <div class="search_wrap">
+                    <div class="legend">신상조사 실시현황</div>
+                    <ul class="bread_crumb">
+                        <li><span class="ico home">home</span></li>
+                        <li><span class="ico arrow">arrow</span></li>
+                        <li>신상조사</li>
+                        <li><span class="ico arrow">arrow</span></li>
+                        <li>신상조사 실시현황</li>
+                    </ul>
+                </div>
+                <form action="POST" class="bg_white">
+                    <div class="options"></div>
+                    <hr>
+                    <div class="btn_wrap">
+                        <button type="button" class="btn btn-md btn-gray"><span class="ico reset">reset</span>초기화</button>
+                        <button type="button" class="btn btn-md btn-primary">검색</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="list_wrap"></div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
