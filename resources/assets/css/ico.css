@@ -27,3 +27,17 @@
     height: 24px;
     width: 24px;
 }
+
+.i-trg-down {
+    background: url(../img/ico/i-trg-down.png);
+    background-size: cover;
+    height: 8px;
+    width: 8px;
+}
+
+.i-trg-up {
+    background: url(../img/ico/i-trg-up.png);
+    background-size: cover;
+    height: 8px;
+    width: 8px;
+}
