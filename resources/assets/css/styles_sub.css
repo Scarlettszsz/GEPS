@@ -19,34 +19,34 @@
     background-repeat: no-repeat;
  }
 .ico.logo{
-    background-image: url(../img/ico/국문영문로고-02\ 1.png);
+    background-image: url(../img/ico/logo.png);
     width: 209px !important;
     height: 36px !important;
  }
 .ico.user{
-    background-image: url(../img/ico/fi_user-check.png);
+    background-image: url(../img/ico/i-user-check.png);
     margin-right: 4px;
  }
  .ico.clock{
-    background-image: url(../img/ico/fi_clock.png);
+    background-image: url(../img/ico/i-clock.png);
     margin-right: 4px;
  }
  .ico.menu{
-    background-image: url(../img/ico/fi_menu.png);
+    background-image: url(../img/ico/i-menu.png);
     height: 24px !important;
     width: 24px !important;
     padding: 4px 3px;
  }
  .ico.home{
-    background-image: url(../img/ico/home-alt2.png);
+    background-image: url(../img/ico/i-home.png);
  }
  .ico.arrow{
-    background-image: url(../img/ico/arrow.png);
+    background-image: url(../img/ico/i-arrow-left.png);
     width: 10px;
     height: 10px;
  }
  .ico.reset{
-    background-image: url(../img/ico/rotate-right.png);
+    background-image: url(../img/ico/i-rotate-right.png);
  }
 
 /* **************************************** *
