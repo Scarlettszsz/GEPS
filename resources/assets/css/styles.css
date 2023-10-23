@@ -13,3 +13,127 @@
 /* **************************************** *
  * GEPS-WEB-HOM-MA01
  * **************************************** */
+.main-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 64px 0 0 0;
+}
+
+.main-cont>.row {
+    margin: 0;
+}
+
+.main-cont .col-8 {
+    padding: 0 30px 0 0;
+}
+
+.main-cont .col-4 {
+    padding: 0 0 0 30px;
+}
+
+.main-cont .card-wrap>.row {
+    margin: 0 -10px;
+}
+
+.main-cont .card-wrap .col-6,
+.main-cont .card-wrap .col-3 {
+    padding: 0 10px;
+}
+
+.main-cont h1.title {
+    align-items: flex-end;
+    display: flex;
+    gap: 8px;
+    margin: 0 0 20px 0;
+}
+
+.main-cont h1.title span {
+    color: #444;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0 0 4px 0;
+}
+
+.main-cont h3.title {
+    margin: 0 0 16px 0;
+}
+
+.main-cont .item-group {
+    align-items: center;
+    display: flex;
+}
+
+.main-cont .item-group li {
+    width: 50%;
+}
+
+.main-cont .item-group li:nth-child(1) {
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 0 32px 0 0;
+}
+
+.main-cont .item-group li:nth-child(2) {
+    padding: 0 0 0 32px;
+}
+
+.item-wrap h5 {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.item-area {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-area h3 {
+    align-items: center;
+    color: #000;
+    display: flex;
+    font-size: 24px;
+    font-weight: 500;
+    gap: 2px;
+}
+
+.item-area h3 span {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.item-area dl {
+    text-align: right;
+}
+
+.item-area dl dt {
+    color: #444;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.item-area dl dd {
+    align-items: center;
+    display: flex;
+    font-size: 13px;
+    font-weight: 700;
+    gap: 2px;
+    justify-content: flex-end;
+}
+
+.item-area dl dd.up {
+    color: #F75D5F;
+}
+
+.item-area dl dd.down {
+    color: #3B89FE;
+}
+
+.item-area.dark h3 {
+    color: #fff;
+}
+
+.item-area.dark dl dt {
+    color: rgba(255, 255, 255, 0.65);
+}

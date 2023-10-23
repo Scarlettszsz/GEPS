@@ -432,8 +432,104 @@ button:focus {
 }
 
 .col-2 {
+    flex: 0 0 auto;
     width: calc((100%/12)*2);
 }
+
+.col-3 {
+    flex: 0 0 auto;
+    width: calc((100%/12)*3);
+}
+
+.col-4 {
+    flex: 0 0 auto;
+    width: calc((100%/12)*4);
+}
+
+.col-5 {
+    flex: 0 0 auto;
+    width: calc((100%/12)*5);
+}
+
+.col-6 {
+    flex: 0 0 auto;
+    width: calc((100%/12)*6);
+}
+
+.col-7 {
+    flex: 0 0 auto;
+    width: calc((100%/12)*7);
+}
+
+.col-8 {
+    flex: 0 0 auto;
+    width: calc((100%/12)*8);
+}
+
+.col-9 {
+    flex: 0 0 auto;
+    width: calc((100%/12)*9);
+}
+
+
+/* **************************************** *
+ * Text
+ * **************************************** */
+h1.title {
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h2.title {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+h3.title {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* **************************************** *
+ * Card
+ * **************************************** */
+.card {
+    background: #fff;
+    border-radius: 16px;
+    height: 100%;
+}
+
+.card.dark {
+    background: #1C2C49;
+}
+
+.card.dark h3.title {
+    color: #fff;
+}
+
+.card.shadow {
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.06);
+}
+
+.card-sm {
+    padding: 24px 32px;
+}
+
+.card-md {
+    padding: 40px 48px;
+}
+
+.card-b {
+    border: 1px solid #eeeeee;
+}
+
+.pt-4 {
+    padding-top: 16px;
+}
+
 
 /* **************************************** *
  * Header
