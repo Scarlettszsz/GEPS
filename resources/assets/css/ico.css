@@ -9,3 +9,21 @@
     height: 24px;
     width: 24px;
 }
+
+.i-user {
+    background: url(../img/ico/i-user-check.png);
+    height: 16px;
+    width: 16px;
+}
+
+.i-clock {
+    background: url(../img/ico/i-clock.png);
+    height: 16px;
+    width: 16px;
+}
+
+.i-menu {
+    background: url(../img/ico/i-menu.png);
+    height: 24px;
+    width: 24px;
+}

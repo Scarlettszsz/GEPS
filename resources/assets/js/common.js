@@ -4,14 +4,41 @@ $(document).ready(function () {
         var modalId = $(this).data("modal-id");
         $("#" + modalId).css("display", "flex");
     });
-
     // 모달 닫기 버튼 및 모달 바깥 영역 클릭 이벤트
     $(".btn-close, .modal-wrap").click(function () {
         $(".modal-wrap").css("display", "none");
     });
-
     // 모달 내부 클릭 시 닫기 방지
     $(".modal-content").click(function (e) {
         e.stopPropagation();
+    });
+
+    //dropdown
+    $(".dropdown-button").click(function () {
+        var target = $(this).data("target");
+        $("#" + target).toggle();
+        $(this).toggleClass("active");
+    });
+
+    //공통상단
+    var $headerMenu = $(".header-menu");
+    var $headerSubWrap = $(".header-sub-wrap");
+    var isSubWrapOpen = false;
+
+    $headerMenu.click(function () {
+        if (isSubWrapOpen) {
+            $headerSubWrap.slideUp();
+            isSubWrapOpen = false;
+        } else {
+            $headerSubWrap.slideDown();
+            isSubWrapOpen = true;
+        }
+    });
+
+    $headerSubWrap.mouseleave(function () {
+        if (isSubWrapOpen) {
+            $headerSubWrap.slideUp();
+            isSubWrapOpen = false;
+        }
     });
 });
