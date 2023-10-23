@@ -10,38 +10,119 @@
 
 <body>
     <div class="wrap">
-        <header>
-            <div class="top">
-                <div class="container d-flex jcfe aic">
-                    <div class="user-wrap">
-                        <div class="user-info">
-                            <span class="ico user">user</span>
-                            <span class="input-val under-line">관리자</span>
-                            <span>님 (접속 : <span>2023-07-07 15:19:02</span>)</span>
-                        </div>
-                        <div class="timer">
-                            <span class="ico clock">clock</span>
-                            <span class="input-val">00:29:49</span>
-                        </div>
-                        <button type="button" class="btn btn-outline-gray">로그아웃</button>
+        <header class="header">
+            <div class="header-top-wrap">
+                <div class="container">
+                    <div class="header-top">
+                        <ul>
+                            <li>
+                                <i class="i i-user"></i>
+                                <a href="#">관리자</a>님 (접속 : 2023-07-17 15:19:02)
+                            </li>
+                            <li>
+                                <i class="i i-clock"></i><span>00:29:49</span>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-mini btn-outline-gray">로그아웃</button>
+                        <!-- <a href="#">로그인</a> -->
                     </div>
                 </div>
             </div>
-            <div class="bottom">
-                <div class="container d-flex jcsb aic">
-                    <span class="ico logo">공무원연금공단</span>
-                    <ul class="nav-wrap">
-                        <li class="active">신상조사</li>
-                        <li>생체정보 등록현황</li>
-                        <li>VC 발급현황</li>
-                        <li>통계조회</li>
-                        <li>통계조회</li>
-                        <li>시스템 관리</li>
-                        <li><span class="ico menu">토글</span></li>
-                    </ul>
+            <div class="header-bottom-wrap">
+                <div class="container">
+                    <div class="header-bottom">
+                        <a href="#" class="header-logo">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                        <div class="header-right">
+                            <nav class="header-navbar">
+                                <ul>
+                                    <li><a href="#">신상조사</a></li>
+                                    <li><a href="#">생체정보 등록현황</a></li>
+                                    <li><a href="#">VC 발급현황</a></li>
+                                    <li><a href="#">통계조회</a></li>
+                                    <li><a href="#">서비스 관리</a></li>
+                                    <li><a href="#">시스템관리</a></li>
+                                </ul>
+                            </nav>
+                            <button type="button" class="header-menu">
+                                <i class="i i-menu"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </head>
+            <div class="header-sub-wrap">
+                <div class="container">
+                    <div class="header-sub-navbar">
+                        <div class="col-2">
+                            <h5 class="title">신상조사</h5>
+                            <ul>
+                                <li><a href="#">신상조사 실시현황</a></li>
+                                <li><a href="#">신상조사 등록관리</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="title">생체정보 등록현황</h5>
+                            <ul>
+                                <li><a href="#">생체정보 등록현황</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="title">VC 발급현황</h5>
+                            <ul>
+                                <li><a href="#">VC 발급현황</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="title">통계조회</h5>
+                            <div class="col-group">
+                                <button class="dropdown-button" data-target="subNav01">신상조사 통계</button>
+                                <ul id="subNav01" class="dropdown-list">
+                                    <li><a href="#">신상조사 실시/응답</a></li>
+                                    <li><a href="#">응답 소요시간</a></li>
+                                    <li><a href="#">신상조사 통계지표</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-group">
+                                <button class="dropdown-button" data-target="subNav02">서비스 통계</button>
+                                <ul id="subNav02" class="dropdown-list">
+                                    <li><a href="#">VC 발급현황</a></li>
+                                    <li><a href="#">연금증 발급현황</a></li>
+                                    <li><a href="#">OCR 본인인증 신분증</a></li>
+                                    <li><a href="#">DID 검증이력</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-group">
+                                <button class="dropdown-button active">사용자 통계</button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="title">서비스 관리</h5>
+                            <ul>
+                                <li><a href="#">공지사항 관리</a></li>
+                                <li><a href="#">FAQ 관리</a></li>
+                                <li><a href="#">팝업 관리</a></li>
+                                <li><a href="#">메시징 관리</a></li>
+                                <li><a href="#">서비스 이용약관 관리</a></li>
+                                <li><a href="#">생체정보 안내기간 설정</a></li>
+                                <li><a href="#">신상조사 안내관리</a></li>
+                                <li><a href="#">앱서비스 관리</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="title">시스템관리</h5>
+                            <ul>
+                                <li><a href="#">관리자 관리</a></li>
+                                <li><a href="#">메뉴권한 관리</a></li>
+                                <li><a href="#">시스템 이력조회</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
         <div class="content">
             <div class="search-wrapper">
                 <div class="container">
@@ -56,25 +137,114 @@
                         </ul>
                     </div>
                     <form action="POST" class="bg-white">
-                        <div class="options">
-                            <div class="input-warpper">
-                                <div class="input-warp">
-                                    <label for="">라벨</label>
-                                    <input type="text" placeholder="내용수정하세요">
+                        <div class="options-wrapper">
+                            <div class="options-wrap">
+                                <div class="input-wrapper">
+                                    <label for="">고객번호</label>
+                                    <div class="input-wrap">
+                                        <input type="text" placeholder="번호를 입력하세요">
+                                    </div>
                                 </div>
-                                <div class="input-warp">
-                                    <label for="">라벨</label>
-                                    <input type="text" placeholder="내용수정하세요">
+                                <div class="input-wrapper">
+                                    <label for="">생년월일</label>
+                                    <div class="input-wrap date-pic">
+                                        <input type="date" placeholder="시작일">
+                                        <span>-</span>
+                                        <input type="date" placeholder="종료">
+                                    </div>
+                                </div>
+                                <div class="input-wrapper">
+                                    <label for="">인증정책</label>
+                                    <div class="input-wrap">
+                                        <select name="" id="" value="0">
+                                            <option value="0" >전체</option>
+                                            <option value="1" >로그인 전체</option>
+                                            <option value="2" >홈페이지 로그인</option>
+                                            <option value="3" >모바일 로그인</option>
+                                            <option value="4" >교육장 출석</option>
+                                            <option value="5" >연계시설 전체</option>
+                                            <option value="6" >천안 상록리조트</option>
+                                            <option value="7" >화성 상록골프장</option>
+                                            <option value="8" >수안보 상록호텔</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="input-wrapper">
+                                    <label for="auth">본인인증 여부</label>
+                                    <div class="input-wrap check-radio-wrapper">
+                                        <div class="check-radio-wrap">
+                                            <input type="radio" name="auth" id="auth1" value="1" checked>
+                                            <label for="auth1">전체</label>
+                                        </div>
+                                        <div class="check-radio-wrap">
+                                            <input type="radio" name="auth" id="auth2"  value="2">
+                                            <label for="auth2">인증</label>
+                                        </div>
+                                        <div class="check-radio-wrap">
+                                            <input type="radio" name="auth" id="auth3"  value="3">
+                                            <label for="auth3">미인증</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-wrapper">
+                                    <label for="">신상조사 수행여부</label>
+                                    <div class="input-wrap check-radio-wrapper">
+                                        <div class="check-radio-wrap">
+                                            <input type="checkbox">
+                                            <label for="1">전체</label>
+                                        </div>
+                                        <div class="check-radio-wrap">
+                                            <input type="checkbox">
+                                            <label for="2">성공</label>
+                                        </div>
+                                        <div class="check-radio-wrap">
+                                            <input type="checkbox">
+                                            <label for="3">실패</label>
+                                        </div>
+                                        <div class="check-radio-wrap">
+                                            <input type="checkbox">
+                                            <label for="4">미수행</label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="input-warpper">
-                                <div class="input-warp">
-                                    <label for="">라벨</label>
-                                    <input type="text" placeholder="내용수정하세요">
+                            <div class="options-wrap">
+                                <div class="input-wrapper">
+                                    <label for="">이름</label>
+                                    <div class="input-wrap">
+                                        <input type="text" placeholder="이름을 입력하세요">
+                                    </div>
                                 </div>
-                                <div class="input-warp">
-                                    <label for="">라벨</label>
-                                    <input type="text" placeholder="내용수정하세요">
+                                <div class="input-wrapper">
+                                    <label for="">회사명</label>
+                                    <div class="input-wrap">
+                                        <input type="text" placeholder="회사명 입력하세요">
+                                    </div>
+                                </div>
+                                <div class="input-wrapper">
+                                    <label for="checkinfo">신상조사 진행상태</label>
+                                    <div class="input-wrap check-radio-wrapper">
+                                        <div class="check-radio-wrap">
+                                            <input type="radio" name="checkinfo" id="auth1" value="1" checked>
+                                            <label for="auth1">전체</label>
+                                        </div>
+                                        <div class="check-radio-wrap">
+                                            <input type="radio" name="checkinfo" id="auth2"  value="2">
+                                            <label for="auth2">인증</label>
+                                        </div>
+                                        <div class="check-radio-wrap">
+                                            <input type="radio" name="checkinfo" id="auth3"  value="3">
+                                            <label for="auth3">미인증</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-wrapper">
+                                    <label for="">신상조사 수행일자</label>
+                                    <div class="input-wrap date-pic">
+                                        <input type="date" placeholder="시작일">
+                                        <span>-</span>
+                                        <input type="date" placeholder="종료">
+                                    </div>
                                 </div>
                             </div>
                         </div>
