@@ -839,7 +839,7 @@ h3.title {
     display: inline-block;
     height: 16px;
     position: absolute;
-    transform: rotate(-180deg);
+    transform: rotate(0);
     transition: all .5s;
     right: 16px;
     width: 16px;
@@ -854,7 +854,7 @@ h3.title {
 }
 
 .dropdown-group .dropdown-list-wrap .dropdown-button.active::after {
-    transform: rotate(0);
+    transform: rotate(-180deg);
     transition: all .5s;
 }
 
