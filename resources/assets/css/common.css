@@ -493,6 +493,10 @@ button:focus {
     width: calc((100%/12)*9);
 }
 
+.col-12 {
+    width: 100%;
+}
+
 
 /* **************************************** *
  * Text
@@ -514,6 +518,7 @@ h3.title {
     font-size: 16px;
     font-weight: 700;
 }
+
 
 /* **************************************** *
  * Card
@@ -542,6 +547,10 @@ h3.title {
 
 .card-md {
     padding: 40px 48px;
+}
+
+.card-lg {
+    padding: 40px 64px;
 }
 
 .card-b {
@@ -1242,6 +1251,8 @@ h3.title {
     font-size: 15px;
     font-weight: 700;
     height: 56px;
+    position: sticky;
+    top: 0;
 }
 
 .basic-table tbody tr td {
@@ -1260,4 +1271,26 @@ h3.title {
 .basic-table thead tr th:first-child,
 .basic-table tbody tr td:first-child {
     border-left: 0;
+}
+
+.scroll-y {
+    overflow-y: scroll;
+}
+
+.scroll-y::-webkit-scrollbar {
+    background: none;
+    width: 8px;
+}
+
+.scroll-y::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 100px;
+}
+
+.h-392 {
+    max-height: 393px;
+}
+
+.h-284 {
+    max-height: 284px;
 }
