@@ -283,6 +283,11 @@
     padding: 80px 0 120px 0;
 }
 
+.sub-cont-top {
+    display: flex;
+    justify-content: space-between;
+}
+
 .sub-cont-top h1 {
     color: #000;
     font-size: 32px;
@@ -295,4 +300,153 @@
 
 .sub-cont .row .col-6 {
     padding: 0 20px;
+}
+
+/* **************************************** *
+ * GEPS-WEB-STA-BV04
+ * **************************************** */
+.sec-top {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    margin: 64px 0 16px 0;
+}
+
+.sec-top button {
+    font-size: 14px;
+    height: 36px;
+}
+
+.row .col-12 {
+    padding: 0 20px;
+}
+
+.card-table {
+    text-align: left;
+    width: 100%;
+}
+
+.card-table tbody tr th {
+    color: #444;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.card-table tbody tr td {
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.proceeding {
+    background: #1C2C49;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    height: 20px;
+    padding: 2px 8px;
+    margin: 0 0 0 8px;
+}
+
+.dl-group {
+    display: flex;
+}
+
+.dl-group dl {
+    border-right: 1px solid #ddd;
+    text-align: center;
+    width: 20%;
+}
+
+.dl-group dl:last-child {
+    border: 0;
+}
+
+.dl-group dl dt {
+    color: #444;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.dl-group dl dd {
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 4px 0 0 0;
+}
+
+.sub-cont .card {
+    height: auto;
+}
+
+.dropdown-group-two {
+    display: flex;
+    gap: 4px;
+}
+
+.dropdown-group-two .dropdown-list-wrap {
+    width: 92px;
+}
+
+.dropdown-group-two .dropdown-list-wrap .dropdown-button {
+    font-size: 14px;
+    height: 36px;
+    padding: 0 12px;
+}
+
+.dropdown-group-two .dropdown-list-wrap .dropdown-button::after {
+    height: 12px;
+    right: 12px;
+    width: 12px;
+}
+
+.dropdown-group-two .dropdown-list-wrap .dropdown-list {
+    max-height: 254px;
+    overflow-y: scroll;
+    padding: 8px 4px;
+}
+
+.dropdown-group-two .dropdown-list-wrap .dropdown-list::-webkit-scrollbar {
+    background: none;
+    width: 6px;
+}
+
+.dropdown-group-two .dropdown-list-wrap .dropdown-list::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 100px;
+}
+
+.chart-bottom {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+}
+
+.chart-legend span {
+    border-radius: 100px;
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+}
+
+.chart-legend span.yellow {
+    background: #F9CE6E;
+}
+
+.chart-legend span.green {
+    background: #4BC6A1;
+}
+
+.chart-legend span.blue {
+    background: #3C62AA;
+}
+
+.chart-legend span.red {
+    background: #FF615E;
+}
+
+.check-group .chart-legend {
+    align-items: center;
+    gap: 4px;
 }
