@@ -22,6 +22,9 @@
                     <li>
                         <a href="#">MODAL</a>
                     </li>
+                    <li>
+                        <a href="#">INPUT</a>
+                    </li>
                 </ul>
             </aside>
             <section class="common-element">
@@ -60,6 +63,112 @@
                                         data-modal-id="mdModal">MD</button>
                                     <button type="button" class="btn btn-sm btn-primary open-modal"
                                         data-modal-id="lgModal">LG</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>INPUT</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="check-wrap">
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk">
+                                        <label for="chk">기본</label>
+                                    </div>
+
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk02" disabled>
+                                        <label for="chk02">기본 Disabled</label>
+                                    </div>
+
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk04">
+                                        <label for="chk04">기본 Focus / Hover</label>
+                                    </div>
+
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk05" disabled checked>
+                                        <label for="chk05">기본 Check + Disabled</label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="radio-wrap">
+                                    <div class="radio-group">
+                                        <input type="radio" id="radio01">
+                                        <label for="radio01">기본</label>
+                                    </div>
+
+                                    <div class="radio-group">
+                                        <input type="radio" id="radio02" disabled>
+                                        <label for="radio02">기본 Disabled</label>
+                                    </div>
+
+                                    <div class="radio-group">
+                                        <input type="radio" id="radio04" disabled checked>
+                                        <label for="radio04">기본 Check + Disabled</label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pt-4">
+                                <div class="input-wrap">
+                                    <div class="input-group">
+                                        <label for="">기본</label>
+                                        <input type="text" id="text01" placeholder="텍스트를 입력하세요">
+                                    </div>
+
+                                    <div class="input-group error">
+                                        <label for="">기본(에러)</label>
+                                        <input type="text" id="text02">
+                                        <p class="error-msg">정확한 정보를 입력해주세요</p>
+                                    </div>
+
+                                    <div class="input-group">
+                                        <label for="">기본(disabled)</label>
+                                        <input type="text" id="text03" disabled placeholder="텍스트를 입력하세요">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="pt-4">
+                                <div class="dropdown-group">
+                                    <h2>타이틀</h2>
+                                    <div class="dropdown-list-wrap">
+                                        <button class="dropdown-button" data-target="drop01">전체</button>
+                                        <ul id="drop01" class="dropdown-list">
+                                            <li><a href="#">신상조사 실시/응답</a></li>
+                                            <li><a href="#">응답 소요시간</a></li>
+                                            <li><a href="#">신상조사 통계지표</a></li>
+                                            <hr>
+                                            <li><a href="#">신상조사 실시/응답</a></li>
+                                            <li><a href="#">응답 소요시간</a></li>
+                                            <li><a href="#">신상조사 통계지표</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="pt-4">
+                                <div class="date-group">
+                                    <h2>타이틀</h2>
+                                    <div class="date-wrap">
+                                        <input type="date" placeholder="시작일">
+                                        <span>-</span>
+                                        <input type="date">
+                                    </div>
                                 </div>
                             </td>
                         </tr>
