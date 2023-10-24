@@ -309,6 +309,24 @@ button:focus {
     background: #BFD3E6;
 }
 
+.btn-more {
+    align-items: center;
+    color: #666;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    gap: 2px;
+}
+
+.btn-more::after {
+    background: url(../img/ico/i-arrow-right-g.png);
+    background-size: cover;
+    content: '';
+    display: inline-block;
+    height: 13px;
+    width: 13px;
+}
+
 /* **************************************** *
  * MODAL
  * **************************************** */
@@ -423,7 +441,7 @@ button:focus {
  * **************************************** */
 .container {
     margin: 0 auto;
-    min-width: 1440px;
+    max-width: 1440px;
 }
 
 .row {
@@ -432,7 +450,457 @@ button:focus {
 }
 
 .col-2 {
+    flex: 0 0 auto;
     width: calc((100%/12)*2);
+}
+
+.col-3 {
+    flex: 0 0 auto;
+    width: calc((100%/12)*3);
+}
+
+.col-4 {
+    flex: 0 0 auto;
+    width: calc((100%/12)*4);
+}
+
+.col-5 {
+    flex: 0 0 auto;
+    width: calc((100%/12)*5);
+}
+
+.col-6 {
+    flex: 0 0 auto;
+    width: calc((100%/12)*6);
+}
+
+.col-7 {
+    flex: 0 0 auto;
+    width: calc((100%/12)*7);
+}
+
+.col-8 {
+    flex: 0 0 auto;
+    width: calc((100%/12)*8);
+}
+
+.col-9 {
+    flex: 0 0 auto;
+    width: calc((100%/12)*9);
+}
+
+
+/* **************************************** *
+ * Text
+ * **************************************** */
+h1.title {
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h2.title {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+h3.title {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* **************************************** *
+ * Card
+ * **************************************** */
+.card {
+    background: #fff;
+    border-radius: 16px;
+    height: 100%;
+}
+
+.card.dark {
+    background: #1C2C49;
+}
+
+.card.dark h3.title {
+    color: #fff;
+}
+
+.card.shadow {
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.06);
+}
+
+.card-sm {
+    padding: 24px 32px;
+}
+
+.card-md {
+    padding: 40px 48px;
+}
+
+.card-b {
+    border: 1px solid #eeeeee;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 32px 0;
+}
+
+.pt-4 {
+    padding-top: 16px;
+}
+
+
+/* **************************************** *
+ * input
+ * **************************************** */
+/* checkbox */
+.check-wrap {
+    align-items: center;
+    display: flex;
+    gap: 40px;
+}
+
+.check-group {
+    align-items: center;
+    display: flex;
+}
+
+.check-group input[type=checkbox] {
+    display: none;
+}
+
+.check-group label {
+    align-items: center;
+    cursor: pointer;
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    gap: 6px;
+}
+
+.check-group label::before {
+    background: url(../img/ico/i-check.png);
+    background-size: cover;
+    content: '';
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+}
+
+.check-group input[type=checkbox]:disabled+label {
+    color: #444;
+    font-weight: 400;
+}
+
+.check-group input[type=checkbox]:disabled+label::before {
+    background: url(../img/ico/i-check-disabled.png);
+    background-size: cover;
+}
+
+.check-group input[type=checkbox]:disabled:hover+label::before {
+    background: url(../img/ico/i-check-disabled.png);
+    background-size: cover;
+}
+
+.check-group input[type=checkbox]:focus+label::before,
+.check-group input[type=checkbox]:hover+label::before {
+    background: url(../img/ico/i-check-focus.png);
+    background-size: cover;
+    transition: all .5s;
+}
+
+.check-group input[type=checkbox]:checked+label::before {
+    background: url(../img/ico/i-checked.png);
+    background-size: cover;
+    transition: all .5s;
+}
+
+.check-group input[type=checkbox]:checked:disabled+label {
+    color: #444;
+    font-weight: 400;
+}
+
+.check-group input[type=checkbox]:checked:disabled+label::before {
+    background: url(../img/ico/i-check-checked-disabled.png);
+    background-size: cover;
+}
+
+/* radio */
+.radio-wrap {
+    align-items: center;
+    display: flex;
+    gap: 40px;
+}
+
+.radio-group {
+    align-items: center;
+    display: flex;
+}
+
+.radio-group input[type=radio] {
+    display: none;
+}
+
+.radio-group label {
+    align-items: center;
+    cursor: pointer;
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    gap: 6px;
+}
+
+.radio-group label::before {
+    background: url(../img/ico/i-radio.png);
+    background-size: cover;
+    content: '';
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+}
+
+.radio-group input[type=radio]:disabled+label {
+    color: #444;
+    font-weight: 400;
+}
+
+.radio-group input[type=radio]:disabled+label::before {
+    background: url(../img/ico/i-radio-disabled.png);
+    background-size: cover;
+}
+
+
+.radio-group input[type=radio]:disabled:hover+label::before {
+    background: url(../img/ico/i-radio-disabled.png);
+    background-size: cover;
+}
+
+/* .radio-group input[type=radio]:focus + label::before,
+.radio-group input[type=radio]:hover + label::before  {
+    background: url(../img/ico/i-radio-focus.png);
+    background-size: cover;
+    transition: all .5s;
+} */
+
+.radio-group input[type=radio]:checked+label::before {
+    background: url(../img/ico/i-radio-checked.png);
+    background-size: cover;
+    transition: all .5s;
+}
+
+.radio-group input[type=radio]:checked:disabled+label {
+    color: #444;
+    font-weight: 400;
+}
+
+.radio-group input[type=radio]:checked:disabled+label::before {
+    background: url(../img/ico/i-radio-checked-disabled.png);
+    background-size: cover;
+}
+
+/* input text */
+.input-wrap {
+    display: flex;
+    gap: 60px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.input-group input[type=text] {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 12px 16px;
+    transition: all .5s;
+}
+
+.input-group input[type=text]::placeholder {
+    color: #aaa;
+}
+
+.input-group input[type=text]:hover {
+    border: 1px solid #aaa;
+    transition: all .5s;
+}
+
+.input-group input[type=text]:focus {
+    border: 1px solid #004F9D
+}
+
+.input-group.error input[type=text] {
+    border: 1px solid #E34140;
+}
+
+.input-group.error .error-msg {
+    color: #E34140;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 2px 0 0 0;
+}
+
+.input-group input[type=text]:disabled {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    color: #aaa;
+}
+
+/* dropdown-group */
+.dropdown-group {
+    align-items: baseline;
+    display: flex;
+}
+
+.dropdown-group h2 {
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    flex: 0 0 auto;
+    width: 104px;
+}
+
+.dropdown-group .dropdown-list-wrap {
+    position: relative;
+    width: 100%;
+}
+
+.dropdown-group .dropdown-list-wrap .dropdown-button {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    justify-content: flex-start;
+    height: 46px;
+    padding: 0 16px;
+    position: relative;
+    width: 100%;
+}
+
+.dropdown-group .dropdown-list-wrap .dropdown-button::after {
+    background: url(../img/ico/i-arrow-down.png);
+    background-size: cover;
+    content: '';
+    display: inline-block;
+    height: 16px;
+    position: absolute;
+    transform: rotate(-180deg);
+    transition: all .5s;
+    right: 16px;
+    width: 16px;
+}
+
+.dropdown-group .dropdown-list-wrap .dropdown-button.active::after {
+    transform: rotate(0);
+    transition: all .5s;
+}
+
+.dropdown-group .dropdown-list-wrap .dropdown-list {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: none;
+    margin: 4px 0 0 0;
+    padding: 8px;
+    z-index: 1;
+}
+
+.dropdown-group .dropdown-list-wrap .dropdown-list li a {
+    color: #444;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px 8px;
+}
+
+.dropdown-group .dropdown-list-wrap .dropdown-list li a:hover,
+.dropdown-group .dropdown-list-wrap .dropdown-list li a:focus {
+    background: #EFF6FF;
+    border-radius: 4px;
+    color: #004F9D;
+    font-weight: 500;
+}
+
+.dropdown-group .dropdown-list-wrap .dropdown-list hr {
+    border: 1px solid #ddd;
+    margin: 8px 0;
+}
+
+/* input date */
+.date-group {
+    align-items: baseline;
+    display: flex;
+}
+
+.date-group h2 {
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    flex: 0 0 auto;
+    width: 104px;
+}
+
+.date-group .date-wrap {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
+.date-group input[type="date"]::-webkit-calendar-picker-indicator,
+.date-group input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+    appearance: none;
+}
+
+.date-group input[type=date] {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    justify-content: flex-start;
+    height: 46px;
+    padding: 0 16px;
+    position: relative;
+    transition: all .5s;
+    width: 100%;
+}
+
+.date-group input[type="date"]::-webkit-calendar-picker-indicator {
+    background: url(../img/ico/i-calendar.png) no-repeat right;
+    background-size: 80%;
+    color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    display: block;
+    height: 20px;
+    opacity: 1;
+    width: 20px;
+}
+
+.date-group input[type=date]:hover {
+    border: 1px solid #aaa;
+    transition: all .5s;
+}
+
+.date-group input[type=date]:focus {
+    border: 1px solid #004F9D;
+    transition: all .5s;
 }
 
 /* **************************************** *
@@ -512,6 +980,10 @@ button:focus {
     height: 100px;
 }
 
+.header-logo img {
+    height: 36px;
+}
+
 .header-right {
     align-items: center;
     display: flex;
@@ -525,9 +997,17 @@ button:focus {
 
 .header-navbar ul li a {
     color: #000;
+    display: block;
     font-size: 20px;
     font-weight: 500;
+    padding: 36px 0 32px 0;
     transition: .5s all;
+}
+
+.header-navbar ul li.active a {
+    border-bottom: 4px solid #004F9D;
+    color: #004F9D;
+    font-weight: 700;
 }
 
 .header-navbar ul li a:hover {
