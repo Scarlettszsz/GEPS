@@ -114,7 +114,7 @@ textarea {
 
 .common-body aside {
     background: #F4F5F7;
-    height: calc(100vh - 60px);
+    height: auto;
     padding: 20px;
     width: 200px;
 }
@@ -439,9 +439,13 @@ button:focus {
 /* **************************************** *
  * container
  * **************************************** */
+.wrap {
+    min-width: 1440px;
+}
+
 .container {
     margin: 0 auto;
-    max-width: 1440px;
+    width: 1440px;
 }
 
 .row {
@@ -839,7 +843,7 @@ h3.title {
     display: inline-block;
     height: 16px;
     position: absolute;
-    transform: rotate(-180deg);
+    transform: rotate(0);
     transition: all .5s;
     right: 16px;
     width: 16px;
@@ -854,7 +858,7 @@ h3.title {
 }
 
 .dropdown-group .dropdown-list-wrap .dropdown-button.active::after {
-    transform: rotate(0);
+    transform: rotate(-180deg);
     transition: all .5s;
 }
 
@@ -996,6 +1000,7 @@ h3.title {
     font-weight: 700;
     transition: all .5s;
 }
+
 /* **************************************** *
  * Header
  * **************************************** */
