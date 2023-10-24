@@ -16,11 +16,11 @@
                     <div class="header-top">
                         <ul>
                             <li>
-                                <i class="i i-user"></i>
+                                <i class="ico i-user"></i>
                                 <a href="#">관리자</a>님 (접속 : 2023-07-17 15:19:02)
                             </li>
                             <li>
-                                <i class="i i-clock"></i><span>00:29:49</span>
+                                <i class="ico i-clock"></i><span>00:29:49</span>
                             </li>
                         </ul>
                         <button type="button" class="btn btn-mini btn-outline-gray">로그아웃</button>
@@ -136,114 +136,108 @@
                             <li>신상조사 실시현황</li>
                         </ul>
                     </div>
-                    <form action="POST" class="bg-white">
+                    <form action="#" class="bg-white">
                         <div class="options-wrapper">
                             <div class="options-wrap">
-                                <div class="input-wrapper">
+                                <div class="input-group">
                                     <label for="">고객번호</label>
-                                    <div class="input-wrap">
-                                        <input type="text" placeholder="번호를 입력하세요">
-                                    </div>
+                                    <input type="text" placeholder="번호를 입력하세요">
                                 </div>
-                                <div class="input-wrapper">
-                                    <label for="">생년월일</label>
-                                    <div class="input-wrap date-pic">
+                                <div class="date-group">
+                                    <h2>생년월일</h2>
+                                    <div class="date-wrap">
                                         <input type="date" placeholder="시작일">
                                         <span>-</span>
-                                        <input type="date" placeholder="종료">
+                                        <input type="date">
                                     </div>
                                 </div>
-                                <div class="input-wrapper">
-                                    <label for="">인증정책</label>
-                                    <div class="input-wrap">
-                                        <select name="" id="" value="0">
-                                            <option value="0" >전체</option>
-                                            <option value="1" >로그인 전체</option>
-                                            <option value="2" >홈페이지 로그인</option>
-                                            <option value="3" >모바일 로그인</option>
-                                            <option value="4" >교육장 출석</option>
-                                            <option value="5" >연계시설 전체</option>
-                                            <option value="6" >천안 상록리조트</option>
-                                            <option value="7" >화성 상록골프장</option>
-                                            <option value="8" >수안보 상록호텔</option>
-                                        </select>
+                                <div class="dropdown-group">
+                                    <h2>타이틀</h2>
+                                    <div class="dropdown-list-wrap">
+                                        <button class="dropdown-button" data-target="drop01">전체</button>
+                                        <ul id="drop01" class="dropdown-list">
+                                            <li><a href="#">신상조사 실시/응답</a></li>
+                                            <li><a href="#">응답 소요시간</a></li>
+                                            <li><a href="#">신상조사 통계지표</a></li>
+                                            <hr>
+                                            <li><a href="#">신상조사 실시/응답</a></li>
+                                            <li><a href="#">응답 소요시간</a></li>
+                                            <li><a href="#">신상조사 통계지표</a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="input-wrapper">
-                                    <label for="auth">본인인증 여부</label>
-                                    <div class="input-wrap check-radio-wrapper">
-                                        <div class="check-radio-wrap">
-                                            <input type="radio" name="auth" id="auth1" value="1" checked>
-                                            <label for="auth1">전체</label>
-                                        </div>
-                                        <div class="check-radio-wrap">
-                                            <input type="radio" name="auth" id="auth2"  value="2">
-                                            <label for="auth2">인증</label>
-                                        </div>
-                                        <div class="check-radio-wrap">
-                                            <input type="radio" name="auth" id="auth3"  value="3">
-                                            <label for="auth3">미인증</label>
-                                        </div>
+                                <div class="radio-wrap">
+                                    <h2>본인인증 여부</h2>
+                                    <div class="radio-group">
+                                        <input type="radio" id="radio01" checked>
+                                        <label for="radio01">전체</label>
+                                    </div>
+
+                                    <div class="radio-group">
+                                        <input type="radio" id="radio02">
+                                        <label for="radio02">인증</label>
+                                    </div>
+
+                                    <div class="radio-group">
+                                        <input type="radio" id="radio03">
+                                        <label for="radio03">미인증</label>
                                     </div>
                                 </div>
-                                <div class="input-wrapper">
-                                    <label for="">신상조사 수행여부</label>
-                                    <div class="input-wrap check-radio-wrapper">
-                                        <div class="check-radio-wrap">
-                                            <input type="checkbox">
-                                            <label for="1">전체</label>
-                                        </div>
-                                        <div class="check-radio-wrap">
-                                            <input type="checkbox">
-                                            <label for="2">성공</label>
-                                        </div>
-                                        <div class="check-radio-wrap">
-                                            <input type="checkbox">
-                                            <label for="3">실패</label>
-                                        </div>
-                                        <div class="check-radio-wrap">
-                                            <input type="checkbox">
-                                            <label for="4">미수행</label>
-                                        </div>
+                                <div class="check-wrap">
+                                    <h2>신상조사 여부</h2>
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk" checked>
+                                        <label for="chk">전체</label>
+                                    </div>
+
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk02">
+                                        <label for="chk02">성공</label>
+                                    </div>
+
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk03">
+                                        <label for="chk03">실패</label>
+                                    </div>
+
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk04">
+                                        <label for="chk04">미수행</label>
                                     </div>
                                 </div>
                             </div>
                             <div class="options-wrap">
-                                <div class="input-wrapper">
+                                <div class="input-group">
                                     <label for="">이름</label>
-                                    <div class="input-wrap">
-                                        <input type="text" placeholder="이름을 입력하세요">
-                                    </div>
+                                    <input type="text" placeholder="이름을 입력하세요">
                                 </div>
-                                <div class="input-wrapper">
+                                <div class="input-group">
                                     <label for="">회사명</label>
-                                    <div class="input-wrap">
-                                        <input type="text" placeholder="회사명 입력하세요">
+                                    <input type="text" placeholder="회사명 입력하세요">
+                                </div>
+                                <div class="radio-wrap">
+                                    <h2>신상조사 진행상태</h2>
+                                    <div class="radio-group">
+                                        <input type="radio" id="radio04" checked>
+                                        <label for="radio04">전체</label>
+                                    </div>
+
+                                    <div class="radio-group">
+                                        <input type="radio" id="radio05">
+                                        <label for="radio05">진행</label>
+                                    </div>
+
+                                    <div class="radio-group">
+                                        <input type="radio" id="radio06">
+                                        <label for="radio06">종료</label>
                                     </div>
                                 </div>
-                                <div class="input-wrapper">
-                                    <label for="checkinfo">신상조사 진행상태</label>
-                                    <div class="input-wrap check-radio-wrapper">
-                                        <div class="check-radio-wrap">
-                                            <input type="radio" name="checkinfo" id="auth1" value="1" checked>
-                                            <label for="auth1">전체</label>
-                                        </div>
-                                        <div class="check-radio-wrap">
-                                            <input type="radio" name="checkinfo" id="auth2"  value="2">
-                                            <label for="auth2">인증</label>
-                                        </div>
-                                        <div class="check-radio-wrap">
-                                            <input type="radio" name="checkinfo" id="auth3"  value="3">
-                                            <label for="auth3">미인증</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="input-wrapper">
-                                    <label for="">신상조사 수행일자</label>
-                                    <div class="input-wrap date-pic">
+                                <div class="date-group">
+                                    <h2>신상조사 수행일자</h2>
+                                    <div class="date-wrap">
                                         <input type="date" placeholder="시작일">
                                         <span>-</span>
-                                        <input type="date" placeholder="종료">
+                                        <input type="date">
                                     </div>
                                 </div>
                             </div>
@@ -256,7 +250,6 @@
                     </form>
                 </div>
             </div>
-            <div class="list-wrap"></div>
         </div>
     </div>
 
