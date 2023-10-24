@@ -280,11 +280,19 @@
  * GEPS-WEB-STA-US02
  * **************************************** */
 .sub-cont {
-    padding: 80px 0;
+    padding: 80px 0 120px 0;
 }
 
 .sub-cont-top h1 {
     color: #000;
     font-size: 32px;
     font-weight: 700;
+}
+
+.sub-cont .row {
+    margin: 0 -20px;
+}
+
+.sub-cont .row .col-6 {
+    padding: 0 20px;
 }

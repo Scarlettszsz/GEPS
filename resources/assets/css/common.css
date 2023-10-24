@@ -550,8 +550,20 @@ h3.title {
     margin: 0 0 32px 0;
 }
 
+.mt-10 {
+    margin-top: 40px !important;
+}
+
+.mt-6 {
+    margin-top: 24px;
+}
+
 .pt-4 {
     padding-top: 16px;
+}
+
+.m-0 {
+    margin: 0;
 }
 
 
@@ -705,6 +717,16 @@ h3.title {
     background-size: cover;
 }
 
+.radio-group.radio-sm label {
+    color: #444;
+    font-size: 14px;
+}
+
+.radio-group.radio-sm label::before {
+    height: 18px;
+    width: 18px;
+}
+
 /* input text */
 .input-wrap {
     display: flex;
@@ -760,7 +782,7 @@ h3.title {
 
 /* dropdown-group */
 .dropdown-group {
-    align-items: baseline;
+    align-items: center;
     display: flex;
 }
 
@@ -791,6 +813,25 @@ h3.title {
     width: 100%;
 }
 
+.dropdown-group.type3 .dropdown-list-wrap .dropdown-button {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    justify-content: center;
+    height: 36px;
+    padding: 0 12px;
+    position: relative;
+    width: 112px;
+}
+
+.dropdown-group.type3 .dropdown-list-wrap .dropdown-button.active {
+    border: 1px solid #004F9D;
+    transition: all .5s;
+}
+
 .dropdown-group .dropdown-list-wrap .dropdown-button::after {
     background: url(../img/ico/i-arrow-down.png);
     background-size: cover;
@@ -804,6 +845,14 @@ h3.title {
     width: 16px;
 }
 
+.dropdown-group.type2 .dropdown-list-wrap .dropdown-button::after {
+    display: none;
+}
+
+.dropdown-group.type3 .dropdown-list-wrap .dropdown-button::after {
+    display: none;
+}
+
 .dropdown-group .dropdown-list-wrap .dropdown-button.active::after {
     transform: rotate(0);
     transition: all .5s;
@@ -815,8 +864,15 @@ h3.title {
     border-radius: 4px;
     display: none;
     margin: 4px 0 0 0;
+    position: absolute;
     padding: 8px;
+    width: 100%;
     z-index: 1;
+}
+
+.dropdown-group.type3 .dropdown-list-wrap .dropdown-list {
+    padding: 8px 4px;
+    width: 112px;
 }
 
 .dropdown-group .dropdown-list-wrap .dropdown-list li a {
@@ -827,8 +883,18 @@ h3.title {
     padding: 6px 8px;
 }
 
+.dropdown-group.type3 .dropdown-list-wrap .dropdown-list li {
+    color: #444;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px 8px;
+}
+
 .dropdown-group .dropdown-list-wrap .dropdown-list li a:hover,
-.dropdown-group .dropdown-list-wrap .dropdown-list li a:focus {
+.dropdown-group .dropdown-list-wrap .dropdown-list li a:focus,
+.dropdown-group.type3 .dropdown-list-wrap .dropdown-list li:hover,
+.dropdown-group.type3 .dropdown-list-wrap .dropdown-list li:focus {
     background: #EFF6FF;
     border-radius: 4px;
     color: #004F9D;
@@ -836,7 +902,7 @@ h3.title {
 }
 
 .dropdown-group .dropdown-list-wrap .dropdown-list hr {
-    border: 1px solid #ddd;
+    border: 1px solid #eee;
     margin: 8px 0;
 }
 
@@ -903,6 +969,33 @@ h3.title {
     transition: all .5s;
 }
 
+/* **************************************** *
+ * tab
+ * **************************************** */
+.tab-wrap {
+    border-bottom: 1px solid #DFE2E7;
+}
+
+.tab-wrap ul {
+    display: flex;
+    gap: 40px;
+}
+
+.tab-wrap ul li a {
+    color: #aaa;
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 16px 0 13px 0;
+    transition: all .5s;
+}
+
+.tab-wrap ul li.active a {
+    border-bottom: 3px solid #004F9D;
+    color: #004F9D;
+    font-weight: 700;
+    transition: all .5s;
+}
 /* **************************************** *
  * Header
  * **************************************** */
@@ -1022,7 +1115,11 @@ h3.title {
 }
 
 .header-sub-wrap {
+    background: #fff;
     display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
 }
 
 .header-sub-navbar {
@@ -1113,4 +1210,49 @@ h3.title {
     color: #444;
     font-size: 14px;
     font-weight: 400;
+}
+
+/* **************************************** *
+ * table
+ * **************************************** */
+.table-top {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0 16px 0;
+}
+
+.basic-table {
+    border-collapse: collapse;
+    border-left: 0;
+    border-right: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.basic-table thead tr th {
+    background: #1C2C49;
+    border: 1px solid #ddd;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    height: 56px;
+}
+
+.basic-table tbody tr td {
+    border: 1px solid #ddd;
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    height: 56px;
+}
+
+.basic-table thead tr th:last-child,
+.basic-table tbody tr td:last-child {
+    border-right: 0;
+}
+
+.basic-table thead tr th:first-child,
+.basic-table tbody tr td:first-child {
+    border-left: 0;
 }

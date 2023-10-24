@@ -128,16 +128,19 @@
             <div class="container">
                 <div class="sub-cont">
                     <div class="sub-cont-top ais">
-                        <h1>사용자 통계</h1>
+                        <h1>신상조사 통계</h1>
                         <!-- depth -->
                     </div>
                     <div class="tab-wrap mt-6">
                         <ul>
                             <li>
-                                <a href="#">사용자 현황</a>
+                                <a href="#">신상조사 실시/응답</a>
+                            </li>
+                            <li>
+                                <a href="#">응답 소요시간</a>
                             </li>
                             <li class="active">
-                                <a href="#">사용 환경</a>
+                                <a href="#">신상조사 통계지표</a>
                             </li>
                         </ul>
                     </div>
@@ -146,160 +149,18 @@
                             <div class="card card-md card-b">
                                 <div class="card-top m-0">
                                     <h2 class="title">사용자 OS 점유율</h2>
-                                    <div class="dropdown-group type3">
-                                        <div class="dropdown-list-wrap">
-                                            <button class="dropdown-button" data-target="drop03"><i class="i i-calendar"></i>지난 28일</button>
-                                            <ul id="drop03" class="dropdown-list">
-                                                <li>
-                                                    <div class="radio-group radio-sm">
-                                                        <input type="radio" id="radio11" name="radio-group">
-                                                        <label for="radio11">지난 7일</label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="radio-group radio-sm">
-                                                        <input type="radio" id="radio12" name="radio-group">
-                                                        <label for="radio12">지난 28일</label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="radio-group radio-sm">
-                                                        <input type="radio" id="radio13" name="radio-group">
-                                                        <label for="radio13">지난 90일</label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="radio-group radio-sm">
-                                                        <input type="radio" id="radio14" name="radio-group">
-                                                        <label for="radio14">지난 365일</label>
-                                                    </div>
-                                                </li>
-                                                <hr>
-                                                <li>
-                                                    <div class="radio-group radio-sm">
-                                                        <input type="radio" id="radio15" name="radio-group">
-                                                        <label for="radio15">2023년</label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="radio-group radio-sm">
-                                                        <input type="radio" id="radio16" name="radio-group">
-                                                        <label for="radio16">2022년</label>
-                                                    </div>
-                                                </li>
-                                                <hr>
-                                                <li>
-                                                    <div class="radio-group radio-sm">
-                                                        <input type="radio" id="radio17" name="radio-group">
-                                                        <label for="radio17">6월</label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="radio-group radio-sm">
-                                                        <input type="radio" id="radio18" name="radio-group">
-                                                        <label for="radio18">5월</label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="radio-group radio-sm">
-                                                        <input type="radio" id="radio19" name="radio-group">
-                                                        <label for="radio19">4월</label>
-                                                    </div>
-                                                </li>
-                                                <hr>
-                                                <li>
-                                                    <div class="radio-group radio-sm">
-                                                        <input type="radio" id="radio20" name="radio-group">
-                                                        <label for="radio20">사용자 설정</label>
-                                                    </div>
-                                                </li>
-                                                
-                                            </ul>
-                                        </div>
-                                    </div>
                                 </div>
                                 <!-- 차트 영역 -->
-                                <div class="chart-wrap" style="background: #f1f1f1; height: 370px;"></div>
+                                <div class="chart-wrap" style="background: #f1f1f1; height: 330px;"></div>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="card card-md card-b">
-                                <div class="card-top m-0">
+                                <div class="card-top">
                                     <h2 class="title">사용자 디바이스 정보</h2>
-                                    <div class="dropdown-group type3">
-                                        <div class="dropdown-list-wrap">
-                                            <button class="dropdown-button" data-target="drop04"><i class="i i-calendar"></i>지난 28일</button>
-                                            <ul id="drop04" class="dropdown-list">
-                                                <li>
-                                                    <div class="radio-group radio-sm">
-                                                        <input type="radio" id="radio21" name="radio-group-02">
-                                                        <label for="radio21">지난 7일</label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="radio-group radio-sm">
-                                                        <input type="radio" id="radio22" name="radio-group-02">
-                                                        <label for="radio22">지난 28일</label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="radio-group radio-sm">
-                                                        <input type="radio" id="radio23" name="radio-group-02">
-                                                        <label for="radio23">지난 90일</label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="radio-group radio-sm">
-                                                        <input type="radio" id="radio24" name="radio-group-02">
-                                                        <label for="radio24">지난 365일</label>
-                                                    </div>
-                                                </li>
-                                                <hr>
-                                                <li>
-                                                    <div class="radio-group radio-sm">
-                                                        <input type="radio" id="radio25" name="radio-group-02">
-                                                        <label for="radio25">2023년</label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="radio-group radio-sm">
-                                                        <input type="radio" id="radio26" name="radio-group-02">
-                                                        <label for="radio26">2022년</label>
-                                                    </div>
-                                                </li>
-                                                <hr>
-                                                <li>
-                                                    <div class="radio-group radio-sm">
-                                                        <input type="radio" id="radio27" name="radio-group-02">
-                                                        <label for="radio27">6월</label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="radio-group radio-sm">
-                                                        <input type="radio" id="radio28" name="radio-group-02">
-                                                        <label for="radio28">5월</label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="radio-group radio-sm">
-                                                        <input type="radio" id="radio29" name="radio-group-02">
-                                                        <label for="radio29">4월</label>
-                                                    </div>
-                                                </li>
-                                                <hr>
-                                                <li>
-                                                    <div class="radio-group radio-sm">
-                                                        <input type="radio" id="radio30" name="radio-group-02">
-                                                        <label for="radio30">사용자 설정</label>
-                                                    </div>
-                                                </li>
-                                                
-                                            </ul>
-                                        </div>
-                                    </div>
                                 </div>
                                 <!-- 차트 영역 -->
-                                <div class="chart-wrap" style="background: #f1f1f1; height: 370px;"></div>
+                                <div class="chart-wrap" style="background: #f1f1f1; height: 330px;"></div>
                             </div>
                         </div>
                     </div>
