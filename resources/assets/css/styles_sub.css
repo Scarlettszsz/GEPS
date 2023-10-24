@@ -82,6 +82,33 @@ hr{
 .f-primary{
     color: #004F9D;
 }
+.hidden{
+    display: none;
+}
+/* **************************************** *
+ * Margin & padding & gap
+ * **************************************** */
+.mt24{
+    margin-top: 24px;
+}
+.mb16{
+    margin-bottom: 16px;
+}
+.mb40{
+    margin-bottom: 40px;
+}
+.g32{
+    gap: 32px;
+}
+.g40{
+    gap: 40px;
+}
+.pa4864{
+    padding: 48px 64px;
+}
+.pa4048{
+    padding: 40px 48px;
+}
 /* **************************************** *
  * Content
  * **************************************** */
@@ -89,17 +116,16 @@ hr{
     background-color: #F4F5F7;
     padding: 80px 0;
 }
-.search-wrapper form{
+.form{
     border-radius: 16px;
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;
     -ms-border-radius: 16px;
     -o-border-radius: 16px;
     margin-top: 40px;
-    padding: 48px 64px;
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    /* flex: 1; */
 }
 .search-wrap{
     display: flex;
@@ -173,7 +199,6 @@ hr{
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin: 0 0 16px 0;
 }
 .count-wrap{
     display: flex;
@@ -194,4 +219,57 @@ hr{
 .table-chk .check-group label{
     text-indent: -999999em;
     margin-left: 6px;
+}
+td.tot{
+    font-weight: 700 !important;
+}
+
+
+.chart-option-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.chart-option-wrap .check-group label{
+    gap: 28px;
+    position: relative;
+}
+.chart-option-wrap .check-group label::after{
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    top: 50%;
+    left: 36px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.chart-option-wrap li:first-child label::after{
+    background-color: #F9CE6E;
+}
+.chart-option-wrap li:nth-child(2) label::after{
+    background-color: #4BC6A1;
+}
+.chart-option-wrap li:nth-child(3) label::after{
+    background-color: #3C62AA;
+}
+.chart-option-wrap li:nth-child(4) label::after{
+    background-color: #FF615E;
+}
+.chart-option-wrap li:nth-child(5) label::after{
+    background-color: #67BCFA;
+}
+.chart-option-wrap li:last-child label::after{
+    background-color: #889AB0;
 }
