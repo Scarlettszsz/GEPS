@@ -126,7 +126,7 @@ hr{
     font-weight: 700;
     line-height: 40px;
 }
-.search-wrap .bread-crumb{
+.bread-crumb{
     display: flex;
     align-items: center;
     gap: 6px;
@@ -134,7 +134,7 @@ hr{
     font-size: 13px;
     line-height: 18px;
 }
-.search-wrap .bread-crumb li:last-child{
+.bread-crumb li:last-child{
     color: #000000;
 }
 
