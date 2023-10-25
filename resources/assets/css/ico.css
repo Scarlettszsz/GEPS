@@ -71,3 +71,27 @@
     height: 18px;
     width: 18px;
 }
+
+.i-arrow-double-left {
+    background: url(../img/ico/i-arrow-double-left.png);
+    height: 16px;
+    width: 16px;
+}
+
+.i-arrow-left-2 {
+    background: url(../img/ico/i-arrow-left-2.png);
+    height: 16px;
+    width: 16px;
+}
+
+.i-arrow-double-right {
+    background: url(../img/ico/i-arrow-double-right.png);
+    height: 16px;
+    width: 16px;
+}
+
+.i-arrow-right {
+    background: url(../img/ico/i-arrow-right.png);
+    height: 16px;
+    width: 16px;
+}

@@ -1257,7 +1257,8 @@ h3.title {
 
 .basic-table.type2 thead tr th {
     border: 0;
-    border-bottom: 1px solid #ddd;;
+    border-bottom: 1px solid #ddd;
+    ;
 }
 
 .basic-table tbody tr td {
@@ -1295,7 +1296,7 @@ h3.title {
     white-space: nowrap;
 }
 
-.w-64 { 
+.w-64 {
     width: 64px;
 }
 
@@ -1341,4 +1342,39 @@ h3.title {
 
 .circle-group li span.red {
     background: #E34140;
+}
+
+/* **************************************** *
+ * pagination
+ * **************************************** */
+.pagination {
+    margin: 56px 0 0 0;
+}
+
+.pagination ul {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.pagination ul li.active a {
+    border-radius: 2px;
+    border: 1px solid #004F9D;
+    color: #004F9D;
+    font-weight: 600;
+}
+
+.pagination ul li a {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+}
+
+.pagination ul li a {
+    color: #444;
+    font-size: 15px;
+    font-weight: 500;
 }
