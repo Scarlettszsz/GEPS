@@ -94,7 +94,7 @@
                                 </ul>
                             </div>
                             <div class="col-group">
-                                <button class="dropdown-button active">사용자 통계</button>
+                                <button class="dropdown-button">사용자 통계</button>
                             </div>
                         </div>
                         <div class="col-2">
@@ -229,8 +229,8 @@
                                 </div>
                                 <div class="dropdown-group dropdown-group-two">
                                     <div class="dropdown-list-wrap">
-                                        <button class="dropdown-button active" data-target="drop02">기간별</button>
-                                        <ul id="drop02" class="dropdown-list" style="display: block;">
+                                        <button class="dropdown-button" data-target="drop02">기간별</button>
+                                        <ul id="drop02" class="dropdown-list" style="display: none;">
                                             <li><a href="#">1</a></li>
                                             <li><a href="#">2</a></li>
                                             <li><a href="#">3</a></li>
@@ -268,44 +268,44 @@
                         </div>
                         <!-- 차트 영역 -->
                         <div class="chart-wrap" style="background: #f1f1f1; height: 190px;"></div>
-                        <ul class="chart-option-wrap">
-                            <li>
-                                <div class="check-group">
-                                    <input type="checkbox" id="chknew" checked>
-                                    <label for="chknew">신규등록</label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="check-group">
-                                    <input type="checkbox" id="chkstart" checked>
-                                    <label for="chkstart">실시</label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="check-group">
-                                    <input type="checkbox" id="chkanswer" checked>
-                                    <label for="chkanswer">응답</label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="check-group">
-                                    <input type="checkbox" id="chkadd" checked>
-                                    <label for="chkadd">누적응답</label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="check-group">
-                                    <input type="checkbox" id="chkterm" checked>
-                                    <label for="chkterm">기간내응답률</label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="check-group">
-                                    <input type="checkbox" id="chkfail" checked>
-                                    <label for="chkfail">실패</label>
-                                </div>
-                            </li>
-                        </ul>
+                        <div class="chart-bottom">
+                            <div class="check-group">
+                                <input type="checkbox" id="chk01" checked>
+                                <label for="chk01">
+                                    <p class="chart-legend"><span class="yellow"></span>신규등록</p>
+                                </label>
+                            </div>
+                            <div class="check-group">
+                                <input type="checkbox" id="chk02" checked>
+                                <label for="chk02">
+                                    <p class="chart-legend"><span class="green"></span>실시</p>
+                                </label>
+                            </div>
+                            <div class="check-group">
+                                <input type="checkbox" id="chk03" checked>
+                                <label for="chk03">
+                                    <p class="chart-legend"><span class="blue"></span>응답</p>
+                                </label>
+                            </div>
+                            <div class="check-group">
+                                <input type="checkbox" id="chk04" checked>
+                                <label for="chk04">
+                                    <p class="chart-legend"><span class="red"></span>누적응답</p>
+                                </label>
+                            </div>
+                            <div class="check-group">
+                                <input type="checkbox" id="chk05" checked>
+                                <label for="chk05">
+                                    <p class="chart-legend"><span class="red"></span>기간내응답율</p>
+                                </label>
+                            </div>
+                            <div class="check-group">
+                                <input type="checkbox" id="chk06" checked>
+                                <label for="chk06">
+                                    <p class="chart-legend"><span class="red"></span>실패</p>
+                                </label>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -318,14 +318,15 @@
                         <table class="basic-table">
                             <colgroup>
                                 <col style="width: auto;">
-                                <col style="width: auto;">
-                                <col style="width: auto;">
-                                <col style="width: auto;">
-                                <col style="width: auto;">
-                                <col style="width: auto;">
-                                <col style="width: auto;">
-                                <col style="width: auto;">
-                                <col style="width: auto;">
+                                <col style="width: 150px;">
+                                <col style="width: 150px;">
+                                <col style="width: 150px;">
+                                <col style="width: 150px;">
+                                <col style="width: 150px;">
+                                <col style="width: 150px;">
+                                <col style="width: 150px;">
+                                <col style="width: 150px;">
+
                             </colgroup>
                             <thead>
                               <tr>
