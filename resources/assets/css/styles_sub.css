@@ -97,6 +97,9 @@ hr{
 .mb40{
     margin-bottom: 40px;
 }
+.g4{
+    gap: 4px;
+}
 .g32{
     gap: 32px;
 }
