@@ -181,6 +181,14 @@ button:focus {
     gap: 8px;
 }
 
+.btn-group.md {
+    gap: 20px;
+}
+
+.btn-group.flex-end {
+    justify-content: flex-end;
+}
+
 .btn {
     border: 0;
     border-radius: 4px;
@@ -325,6 +333,60 @@ button:focus {
     display: inline-block;
     height: 13px;
     width: 13px;
+}
+
+.btn-del {
+    background: #fff;
+    border: 1px solid #004f9d;
+    border-radius: 100px;
+    height: 46px;
+    transition: .5s all;
+    width: 46px;
+}
+
+.btn-del:hover {
+    border: 1px solid #004181;
+    transition: .5s all;
+}
+
+.btn-del:hover .i-del {
+    background: url(../img/ico/i-del-hover.png);
+    transition: .5s all;
+}
+
+.btn-del:disabled {
+    border: 1px solid #DBE9F6;
+}
+
+.btn-del:disabled .i-del {
+    background: url(../img/ico/i-del-disabled.png);
+}
+
+.btn-edit {
+    background: #fff;
+    border: 1px solid #004f9d;
+    border-radius: 100px;
+    height: 46px;
+    transition: .5s all;
+    width: 46px;
+}
+
+.btn-edit:hover {
+    border: 1px solid #004181;
+    transition: .5s all;
+}
+
+.btn-edit:hover .i-edit {
+    background: url(../img/ico/i-edit-hover.png);
+    transition: .5s all;
+}
+
+.btn-edit:disabled {
+    border: 1px solid #DBE9F6;
+}
+
+.btn-edit:disabled .i-edit {
+    background: url(../img/ico/i-edit-disabled.png);
 }
 
 /* **************************************** *
@@ -1257,7 +1319,8 @@ h3.title {
 
 .basic-table.type2 thead tr th {
     border: 0;
-    border-bottom: 1px solid #ddd;;
+    border-bottom: 1px solid #ddd;
+    ;
 }
 
 .basic-table tbody tr td {
@@ -1295,7 +1358,7 @@ h3.title {
     white-space: nowrap;
 }
 
-.w-64 { 
+.w-64 {
     width: 64px;
 }
 
@@ -1341,4 +1404,39 @@ h3.title {
 
 .circle-group li span.red {
     background: #E34140;
+}
+
+/* **************************************** *
+ * pagination
+ * **************************************** */
+.pagination {
+    margin: 56px 0 0 0;
+}
+
+.pagination ul {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.pagination ul li.active a {
+    border-radius: 2px;
+    border: 1px solid #004F9D;
+    color: #004F9D;
+    font-weight: 600;
+}
+
+.pagination ul li a {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+}
+
+.pagination ul li a {
+    color: #444;
+    font-size: 15px;
+    font-weight: 500;
 }

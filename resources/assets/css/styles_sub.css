@@ -133,7 +133,7 @@ hr{
 .search-wrap{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 .search-wrap .legend{
     color: #000000;
