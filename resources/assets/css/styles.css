@@ -484,6 +484,15 @@
     background: #FF615E;
 }
 
+.chart-legend span.skyblue {
+    background: #67BCFA;
+}
+
+.chart-legend span.purple {
+    background: #889AB0;
+}
+
+
 .check-group .chart-legend {
     align-items: center;
     gap: 4px;
