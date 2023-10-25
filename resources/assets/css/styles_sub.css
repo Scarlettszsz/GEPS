@@ -9,47 +9,34 @@
  * **************************************** */
 
  /* **************************************** *
- * icon & logo
+ * in & logo
  * **************************************** */
-.ico{
-    display: block;
-    text-indent: -9999em;
+.i.i-reset-bk{
+    background-image: url(../img/ico/i-reset-bk.png);
     width: 16px;
     height: 16px;
-    background-repeat: no-repeat;
-    background-size: cover;
- }
-.ico.logo{
-    background-image: url(../img/ico/logo.png);
-    width: 209px !important;
-    height: 36px !important;
- }
-.ico.user{
-    background-image: url(../img/ico/i-user-check.png);
-    margin-right: 4px;
- }
- .ico.clock{
-    background-image: url(../img/ico/i-clock.png);
-    margin-right: 4px;
- }
- .ico.menu{
-    background-image: url(../img/ico/i-menu.png);
-    height: 24px !important;
-    width: 24px !important;
-    padding: 4px 3px;
- }
- .ico.home{
-    background-image: url(../img/ico/i-home.png);
- }
- .ico.arrow{
+}
+.i.i-reset-wh{
+    background-image: url(../img/ico/i-reset-wh.png);
+    width: 16px;
+    height: 16px;
+}
+.i.i-arrow-left{
     background-image: url(../img/ico/i-arrow-left.png);
     width: 10px;
     height: 10px;
- }
- .ico.reset{
-    background-image: url(../img/ico/i-rotate-right.png);
- }
+}
+.i.i-message{
+    background-image: url(../img/ico/i-message.png);
+    width: 16px;
+    height: 16px;
+}
+.i.i-power{
+    background-image: url(../img/ico/i-power.png);
+    width: 16px;
+    height: 16px;
 
+}
 /* **************************************** *
  * flex
  * **************************************** */
@@ -95,7 +82,36 @@ hr{
 .f-primary{
     color: #004F9D;
 }
-
+.hidden{
+    display: none;
+}
+/* **************************************** *
+ * Margin & padding & gap
+ * **************************************** */
+.mt24{
+    margin-top: 24px;
+}
+.mb16{
+    margin-bottom: 16px;
+}
+.mb40{
+    margin-bottom: 40px;
+}
+.g4{
+    gap: 4px;
+}
+.g32{
+    gap: 32px;
+}
+.g40{
+    gap: 40px;
+}
+.pa4864{
+    padding: 48px 64px;
+}
+.pa4048{
+    padding: 40px 48px;
+}
 /* **************************************** *
  * Content
  * **************************************** */
@@ -103,22 +119,21 @@ hr{
     background-color: #F4F5F7;
     padding: 80px 0;
 }
-.search-wrapper form{
+.form{
     border-radius: 16px;
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;
     -ms-border-radius: 16px;
     -o-border-radius: 16px;
     margin-top: 40px;
-    padding: 48px 64px;
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    /* flex: 1; */
 }
 .search-wrap{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 .search-wrap .legend{
     color: #000000;
@@ -126,7 +141,7 @@ hr{
     font-weight: 700;
     line-height: 40px;
 }
-.search-wrap .bread-crumb{
+.bread-crumb{
     display: flex;
     align-items: center;
     gap: 6px;
@@ -134,7 +149,7 @@ hr{
     font-size: 13px;
     line-height: 18px;
 }
-.search-wrap .bread-crumb li:last-child{
+.bread-crumb li:last-child{
     color: #000000;
 }
 
@@ -180,4 +195,34 @@ hr{
     justify-content: center;
     gap: 8px;
 }
+/* **************************************** *
+ * Table
+ * **************************************** */
+.table-top2{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.count-wrap{
+    display: flex;
+    gap: 6px;
+}
+.count-wrap .count{
+    display: flex;
+}
 
+.table-chk{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none !important;
+    border-bottom: 1px solid #dddddd !important;
+    padding: 0 8px;
+}
+.table-chk .check-group label{
+    text-indent: -999999em;
+    margin-left: 6px;
+}
+td.tot{
+    font-weight: 700 !important;
+}

@@ -129,13 +129,284 @@
                 <div class="sub-cont">
                     <div class="sub-cont-top ais">
                         <h1>사용자 통계</h1>
-                        
+                        <ul class="bread-crumb">
+                            <li><i class="i i-home"></i></li>
+                            <li><i class="i i-arrow-left"></i></li>
+                            <li>통계조회</li>
+                            <li><i class="i i-arrow-left"></i></li>
+                            <li>사용자 통계</li>
+                            <li><i class="i i-arrow-left"></i></li>
+                            <li>사용환경</li>
+                        </ul>
+                    </div>
+                    <div class="tab-wrap mt-6">
+                        <ul>
+                            <li>
+                                <a href="#">사용자 현황</a>
+                            </li>
+                            <li class="active">
+                                <a href="#">사용 환경</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row mt-10">
+                        <div class="col-6">
+                            <div class="card card-md card-b">
+                                <div class="card-top m-0">
+                                    <h2 class="title">사용자 OS 점유율</h2>
+                                    <div class="dropdown-group type3">
+                                        <div class="dropdown-list-wrap">
+                                            <button class="dropdown-button" data-target="drop03"><i class="i i-calendar"></i>지난 28일</button>
+                                            <ul id="drop03" class="dropdown-list">
+                                                <li>
+                                                    <div class="radio-group radio-sm">
+                                                        <input type="radio" id="radio11" name="radio-group">
+                                                        <label for="radio11">지난 7일</label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="radio-group radio-sm">
+                                                        <input type="radio" id="radio12" name="radio-group">
+                                                        <label for="radio12">지난 28일</label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="radio-group radio-sm">
+                                                        <input type="radio" id="radio13" name="radio-group">
+                                                        <label for="radio13">지난 90일</label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="radio-group radio-sm">
+                                                        <input type="radio" id="radio14" name="radio-group">
+                                                        <label for="radio14">지난 365일</label>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                                <li>
+                                                    <div class="radio-group radio-sm">
+                                                        <input type="radio" id="radio15" name="radio-group">
+                                                        <label for="radio15">2023년</label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="radio-group radio-sm">
+                                                        <input type="radio" id="radio16" name="radio-group">
+                                                        <label for="radio16">2022년</label>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                                <li>
+                                                    <div class="radio-group radio-sm">
+                                                        <input type="radio" id="radio17" name="radio-group">
+                                                        <label for="radio17">6월</label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="radio-group radio-sm">
+                                                        <input type="radio" id="radio18" name="radio-group">
+                                                        <label for="radio18">5월</label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="radio-group radio-sm">
+                                                        <input type="radio" id="radio19" name="radio-group">
+                                                        <label for="radio19">4월</label>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                                <li>
+                                                    <div class="radio-group radio-sm">
+                                                        <input type="radio" id="radio20" name="radio-group">
+                                                        <label for="radio20">사용자 설정</label>
+                                                    </div>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 차트 영역 -->
+                                <div class="chart-wrap" style="background: #f1f1f1; height: 370px;"></div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card card-md card-b">
+                                <div class="card-top m-0">
+                                    <h2 class="title">사용자 디바이스 정보</h2>
+                                    <div class="dropdown-group type3">
+                                        <div class="dropdown-list-wrap">
+                                            <button class="dropdown-button" data-target="drop04"><i class="i i-calendar"></i>지난 28일</button>
+                                            <ul id="drop04" class="dropdown-list">
+                                                <li>
+                                                    <div class="radio-group radio-sm">
+                                                        <input type="radio" id="radio21" name="radio-group-02">
+                                                        <label for="radio21">지난 7일</label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="radio-group radio-sm">
+                                                        <input type="radio" id="radio22" name="radio-group-02">
+                                                        <label for="radio22">지난 28일</label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="radio-group radio-sm">
+                                                        <input type="radio" id="radio23" name="radio-group-02">
+                                                        <label for="radio23">지난 90일</label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="radio-group radio-sm">
+                                                        <input type="radio" id="radio24" name="radio-group-02">
+                                                        <label for="radio24">지난 365일</label>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                                <li>
+                                                    <div class="radio-group radio-sm">
+                                                        <input type="radio" id="radio25" name="radio-group-02">
+                                                        <label for="radio25">2023년</label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="radio-group radio-sm">
+                                                        <input type="radio" id="radio26" name="radio-group-02">
+                                                        <label for="radio26">2022년</label>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                                <li>
+                                                    <div class="radio-group radio-sm">
+                                                        <input type="radio" id="radio27" name="radio-group-02">
+                                                        <label for="radio27">6월</label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="radio-group radio-sm">
+                                                        <input type="radio" id="radio28" name="radio-group-02">
+                                                        <label for="radio28">5월</label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="radio-group radio-sm">
+                                                        <input type="radio" id="radio29" name="radio-group-02">
+                                                        <label for="radio29">4월</label>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                                <li>
+                                                    <div class="radio-group radio-sm">
+                                                        <input type="radio" id="radio30" name="radio-group-02">
+                                                        <label for="radio30">사용자 설정</label>
+                                                    </div>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 차트 영역 -->
+                                <div class="chart-wrap" style="background: #f1f1f1; height: 370px;"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="content">
-            <div class="container"></div>
+            <div class="container">
+                <div class="sub-cont">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="table-wrap">
+                                <div class="table-top">
+                                    <button type="button" class="btn btn-sm btn-outline-gray"><i class="i i-down"></i>내려받기</button>
+                                </div>
+                                <table class="basic-table">
+                                    <colgroup>
+                                        <col style="width: 33.3%;">
+                                        <col style="width: 33.3%;">
+                                        <col style="width: 33.3%;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>구분</th>
+                                            <th>가입일자</th>
+                                            <th>OS환경</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>********583</td>
+                                            <td>2023-06-28</td>
+                                            <td>iOS</td>
+                                        </tr>
+                                        <tr>
+                                            <td>********583</td>
+                                            <td>2023-06-28</td>
+                                            <td>iOS</td>
+                                        </tr>
+                                        <tr>
+                                            <td>********583</td>
+                                            <td>2023-06-28</td>
+                                            <td>iOS</td>
+                                        </tr>
+                                        <tr>
+                                            <td>********583</td>
+                                            <td>2023-06-28</td>
+                                            <td>iOS</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="table-wrap">
+                                <div class="table-top">
+                                    <button type="button" class="btn btn-sm btn-outline-gray"><i class="i i-down"></i>내려받기</button>
+                                </div>
+                                <table class="basic-table">
+                                    <colgroup>
+                                        <col style="width: 33.3%;">
+                                        <col style="width: 33.3%;">
+                                        <col style="width: 33.3%;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>구분</th>
+                                            <th>가입일자</th>
+                                            <th>OS환경</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>********583</td>
+                                            <td>2023-06-28</td>
+                                            <td>iOS</td>
+                                        </tr>
+                                        <tr>
+                                            <td>********583</td>
+                                            <td>2023-06-28</td>
+                                            <td>iOS</td>
+                                        </tr>
+                                        <tr>
+                                            <td>********583</td>
+                                            <td>2023-06-28</td>
+                                            <td>iOS</td>
+                                        </tr>
+                                        <tr>
+                                            <td>********583</td>
+                                            <td>2023-06-28</td>
+                                            <td>iOS</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

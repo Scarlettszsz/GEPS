@@ -41,4 +41,15 @@ $(document).ready(function () {
             isSubWrapOpen = false;
         }
     });
+
+    // 테이블 체크박스 전체선택
+    $("#chkall").click(function () {
+        $(".chk").prop("checked", $(this).prop("checked"));
+    });
+
+    // tr행의 체크박스 선택 시 css 추가
+    $(".chk").click(function () {
+        var isChecked = $(this).prop("checked");
+        $(this).closest("tr").toggleClass("selected", isChecked);
+    });
 });
