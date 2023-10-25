@@ -181,6 +181,14 @@ button:focus {
     gap: 8px;
 }
 
+.btn-group.md {
+    gap: 20px;
+}
+
+.btn-group.flex-end {
+    justify-content: flex-end;
+}
+
 .btn {
     border: 0;
     border-radius: 4px;
@@ -325,6 +333,60 @@ button:focus {
     display: inline-block;
     height: 13px;
     width: 13px;
+}
+
+.btn-del {
+    background: #fff;
+    border: 1px solid #004f9d;
+    border-radius: 100px;
+    height: 46px;
+    transition: .5s all;
+    width: 46px;
+}
+
+.btn-del:hover {
+    border: 1px solid #004181;
+    transition: .5s all;
+}
+
+.btn-del:hover .i-del {
+    background: url(../img/ico/i-del-hover.png);
+    transition: .5s all;
+}
+
+.btn-del:disabled {
+    border: 1px solid #DBE9F6;
+}
+
+.btn-del:disabled .i-del {
+    background: url(../img/ico/i-del-disabled.png);
+}
+
+.btn-edit {
+    background: #fff;
+    border: 1px solid #004f9d;
+    border-radius: 100px;
+    height: 46px;
+    transition: .5s all;
+    width: 46px;
+}
+
+.btn-edit:hover {
+    border: 1px solid #004181;
+    transition: .5s all;
+}
+
+.btn-edit:hover .i-edit {
+    background: url(../img/ico/i-edit-hover.png);
+    transition: .5s all;
+}
+
+.btn-edit:disabled {
+    border: 1px solid #DBE9F6;
+}
+
+.btn-edit:disabled .i-edit {
+    background: url(../img/ico/i-edit-disabled.png);
 }
 
 /* **************************************** *

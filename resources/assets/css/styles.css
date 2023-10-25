@@ -330,17 +330,20 @@
     color: #444;
     font-size: 15px;
     font-weight: 500;
+    height: 28px;
 }
 
 .card-table tbody tr td {
     color: #000;
     font-size: 15px;
     font-weight: 600;
+    height: 28px;
 }
 
 .proceeding {
     background: #1C2C49;
     border-radius: 12px;
+    border: 1px solid #1C2C49;
     color: #fff;
     font-size: 12px;
     font-weight: 500;
@@ -348,6 +351,35 @@
     padding: 2px 8px;
     margin: 0 0 0 8px;
 }
+
+.proceeding.dark-blue {
+    background: #1C2C49;
+}
+
+.proceeding.red {
+    background: #fff;
+    border-color: #F75D5F;
+    color: #F75D5F;
+}
+
+.proceeding.sky {
+    background: #fff;
+    border-color: #3B89FE;
+    color: #3B89FE;
+}
+
+.proceeding.orange {
+    background: #F98700;
+    border-color: #F98700;
+    color: #fff;
+}
+
+.proceeding.gray {
+    background: #fff;
+    border-color: #999;
+    color: #444;
+}
+
 
 .dl-group {
     display: flex;
@@ -357,6 +389,12 @@
     border-right: 1px solid #ddd;
     text-align: center;
     width: 20%;
+}
+
+.dl-group.type2 dl {
+    border-right: 1px solid #ddd;
+    text-align: center;
+    width: 33.33%;
 }
 
 .dl-group dl:last-child {
@@ -449,4 +487,27 @@
 .check-group .chart-legend {
     align-items: center;
     gap: 4px;
+}
+
+/* **************************************** *
+ * GEPS-WEB-BIV-LI01
+ * **************************************** */
+.card-table button {
+    display: inline-block;
+    margin: 0 0 0 8px;
+}
+
+.card-list-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card-list-wrap .btn-group {
+    height: 100%;
+}
+
+.card-list-wrap .btn-lg {
+    font-size: 15px;
+    width: 120px;
 }
