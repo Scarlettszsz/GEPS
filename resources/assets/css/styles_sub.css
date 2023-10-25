@@ -37,6 +37,18 @@
     height: 16px;
 
 }
+.i.i-search{
+    background-image: url(../img/ico/i-search.png);
+    width: 16px;
+    height: 16px;
+
+}
+.i.i-file{
+    background-image: url(../img/ico/i-file.png);
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
 /* **************************************** *
  * flex
  * **************************************** */
@@ -86,6 +98,19 @@ hr{
     display: none;
 }
 /* **************************************** *
+ * Common2
+ * **************************************** */
+.tl{
+    text-align: left !important;
+}
+.tr{
+    text-align: right !important;
+}
+.tc{
+    text-align: center !important;
+}
+
+/* **************************************** *
  * Margin & padding & gap
  * **************************************** */
 .mt24{
@@ -96,6 +121,12 @@ hr{
 }
 .mb40{
     margin-bottom: 40px;
+}
+.pt64{
+    padding-top: 64px;
+}
+.pt80{
+    padding-top: 80px;
 }
 .g4{
     gap: 4px;
@@ -116,7 +147,7 @@ hr{
  * Content
  * **************************************** */
 .search-wrapper{
-    background-color: #F4F5F7;
+    /* background-color: #F4F5F7; */
     padding: 80px 0;
 }
 .form{
@@ -195,6 +226,13 @@ hr{
     justify-content: center;
     gap: 8px;
 }
+.btn.btn-search{
+    background-color: transparent;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+}
+
 /* **************************************** *
  * Table
  * **************************************** */
@@ -202,6 +240,12 @@ hr{
     align-items: center;
     display: flex;
     justify-content: space-between;
+}
+.table-top3{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 16px;
 }
 .count-wrap{
     display: flex;
@@ -225,4 +269,75 @@ hr{
 }
 td.tot{
     font-weight: 700 !important;
+}
+
+/* **************************************** *
+ * Search & drop down wrap
+ * **************************************** */
+.table-top3 .dropdown-group{
+    width: 408px;
+    gap: 8px;
+}
+.table-top3 .dropdown-list-wrap{
+    width: 100px;
+}
+.search-drop{
+    display: flex;
+    justify-content: space-between;
+}
+.search-drop .dropdown-group .dropdown-button{
+    height: 32px;
+}
+.search-drop .search{
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.search-drop .search input[type=text]{
+    font-size: 14px;
+    line-height: 32px;
+    padding: 0 12px 0 16px;
+}
+.search-drop .search input::placeholder{
+    color: #AAAAAA;
+}
+.search-drop .search{
+    position: relative;
+}
+.search-drop .btn-search{
+    position: absolute;
+    top: 50%;
+    right: 4px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+/* **************************************** *
+ * 대상구분
+ * **************************************** */
+.division span{
+    font-size: 12px !important;
+    line-height: 16px;
+    border: solid 1px;
+    padding: 2px 8px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.division.div-common span{
+    border-color: #999999;
+    color: #444444;
+}
+.division.div-supply span{
+    border-color: #F75D5F;
+    color: #F75D5F;
+}
+.division.div-tenure span{
+    border-color: #3B89FE;
+    color: #3B89FE;
 }
