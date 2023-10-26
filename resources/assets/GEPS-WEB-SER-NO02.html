@@ -123,46 +123,48 @@
             </div>
         </header>
         <div class="content container">
-            <div class="search-wrap pt80">
-                <div class="legend">공지사항 관리</div>
-                <ul class="bread-crumb">
-                    <li><i class="i i-home"></i></li>
-                    <li><i class="i i-arrow-left"></i></li>
-                    <li class="active">서비스 관리</li>
-                    <li><i class="i i-arrow-left"></i></li>
-                    <li>공지사항 관리</li>
-                </ul>
-            </div>
-            <div class="pt64 mb120">
-                <form action="" class="write-wrap">
-                    <div class="input-group">
-                        <label for="">공지사항 제목</label>
-                        <input type="text" id="text01" placeholder="텍스트를 입력하세요">
-                    </div>
-                    <div class="dropdown-group">
-                        <h2>카테고리</h2>
-                        <div class="dropdown-list-wrap">
-                            <button class="dropdown-button" data-target="drop01">공통</button>
-                            <ul id="drop01" class="dropdown-list"  style="display: none;">
-                                <li><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                            </ul>
+            <div class="sub-cont">
+                <div class="search-wrap">
+                    <div class="legend">공지사항 관리</div>
+                    <ul class="bread-crumb">
+                        <li><i class="i i-home"></i></li>
+                        <li><i class="i i-arrow-left"></i></li>
+                        <li class="active">서비스 관리</li>
+                        <li><i class="i i-arrow-left"></i></li>
+                        <li>공지사항 관리</li>
+                    </ul>
+                </div>
+                <div class="pt64">
+                    <form action="" class="write-wrap">
+                        <div class="input-group">
+                            <label for="">공지사항 제목</label>
+                            <input type="text" id="text01" placeholder="텍스트를 입력하세요">
                         </div>
+                        <div class="dropdown-group">
+                            <h2>카테고리</h2>
+                            <div class="dropdown-list-wrap">
+                                <button class="dropdown-button" data-target="drop01">공통</button>
+                                <ul id="drop01" class="dropdown-list"  style="display: none;">
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="">공지사항 내용</label>
+                            <!-- form edit filed -->
+                            <textarea name="" id="" style="height: 559px; flex:1; border: solid 1px #DDDDDD; border-radius: 4px; resize: none;"></textarea>
+                        </div>
+                        <div class="input-group">
+                            <label for="">파일첨부</label>
+                            <button type="button" class="btn btn-sm btn-gray">찾아보기</button>
+                        </div>
+                    </form>
+                    <div class="table-top d-flex g8 mt32">
+                        <button type="button" class="btn btn-lg btn-outline-gray">취소</button>
+                        <button type="button" class="btn btn-lg btn-primary">등록</button>
                     </div>
-                    <div class="input-group">
-                        <label for="">공지사항 내용</label>
-                        <!-- form edit filed -->
-                        <textarea name="" id="" style="height: 559px; flex:1; border: solid 1px #DDDDDD; border-radius: 4px; resize: none;"></textarea>
-                    </div>
-                    <div class="input-group">
-                        <label for="">파일첨부</label>
-                        <button type="button" class="btn btn-sm btn-gray">찾아보기</button>
-                    </div>
-                </form>
-                <div class="table-top d-flex g8 mt32">
-                    <button type="button" class="btn btn-lg btn-outline-gray">취소</button>
-                    <button type="button" class="btn btn-lg btn-primary">등록</button>
                 </div>
             </div>
         </div>

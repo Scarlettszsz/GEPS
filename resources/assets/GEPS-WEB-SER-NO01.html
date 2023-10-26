@@ -123,254 +123,297 @@
             </div>
         </header>
         <div class="content">
-            <div class="container pt80">
-                <div class="search-wrap">
-                    <div class="legend">신상조사 실시현황</div>
-                    <ul class="bread-crumb">
-                        <li><i class="i i-home"></i></li>
-                        <li><i class="i i-arrow-left"></i></li>
-                        <li class="active">신상조사</li>
-                        <li><i class="i i-arrow-left"></i></li>
-                        <li>신상조사 실시현황</li>
-                    </ul>
+            <div class="sub-cont">
+                <div class="container">
+                    <div class="search-wrap">
+                        <div class="legend">신상조사 실시현황</div>
+                        <ul class="bread-crumb">
+                            <li><i class="i i-home"></i></li>
+                            <li><i class="i i-arrow-left"></i></li>
+                            <li class="active">신상조사</li>
+                            <li><i class="i i-arrow-left"></i></li>
+                            <li>신상조사 실시현황</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="container">
-                <div class="table-wrap pt64">
-                    <div class="table-top3">
-                        <ul class="count-wrap">
-                            <li>총</li>
-                            <ul class="count">
+                <div class="container">
+                    <div class="table-wrap pt64">
+                        <div class="table-top3">
+                            <ul class="count-wrap">
                                 <li class="f-primary">0</li>
                                 <li>건 선택</li>
+                                <!-- <li>총</li>
+                                <ul class="count">
+                                    <li class="f-primary">0</li>
+                                    <li>건 선택</li>
+                                </ul> -->
                             </ul>
-                        </ul>
-                        <div class="search-drop">
-                            <div class="dropdown-group">
-                                <div class="dropdown-list-wrap">
-                                    <button class="dropdown-button" data-target="drop02">전체</button>
-                                    <ul id="drop02" class="dropdown-list" style="display: none;">
-                                        <li><a href="#">1</a></li>
-                                        <li><a href="#">2</a></li>
-                                        <li><a href="#">3</a></li>
-                                        <li><a href="#">4</a></li>
-                                        <li><a href="#">5</a></li>
-                                        <li><a href="#">6</a></li>
-                                        <li><a href="#">1</a></li>
-                                        <li><a href="#">2</a></li>
-                                        <li><a href="#">3</a></li>
-                                        <li><a href="#">4</a></li>
-                                        <li><a href="#">5</a></li>
-                                        <li><a href="#">6</a></li>
-                                    </ul>
+                            <div class="search-drop">
+                                <div class="dropdown-group">
+                                    <div class="dropdown-list-wrap">
+                                        <button class="dropdown-button" data-target="drop02">전체</button>
+                                        <ul id="drop02" class="dropdown-list" style="display: none;">
+                                            <li class="select"><a href="#">공통</a></li>
+                                            <li><a href="#">수급</a></li>
+                                            <li><a href="#">재직</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="input-group search">
+                                        <label for="text01" class="hidden">기본</label>
+                                        <input type="text" id="text01" placeholder="검색어를 입력하세요">
+                                        <button class="btn btn-search"><i class="i i-search"></i></button>
+                                    </div>
                                 </div>
-                                <div class="input-group search">
-                                    <label for="text01" class="hidden">기본</label>
-                                    <input type="text" id="text01" placeholder="검색어를 입력하세요">
-                                    <button class="btn btn-search"><i class="i i-search"></i></button>
+                                <div class="btn-wrap">
+                                    <button type="button" class="btn btn-sm btn-outline-gray open-modal" disabled>선택삭제</button>
+                                    <button type="button" class="btn btn-sm btn-outline-primary">
+                                        <i class="i i-plus-b"></i>공지사항 작성</button>
                                 </div>
-                            </div>
-                            <div class="btn-wrap">
-                                <button type="button" class="btn btn-sm btn-outline-gray" disabled>선택삭제</button>
-                                <button type="button" class="btn btn-sm btn-outline-primary"><i
-                                        class="i i-plus-b"></i>공지사항 작성</button>
                             </div>
                         </div>
+                        <table class="basic-table type2" id="">
+                            <colgroup>
+                                <col style="width: 80px;">
+                                <col style="width: 80px;">
+                                <col style="width: 160px;">
+                                <col style="width: 600px;">
+                                <col style="width: 180px;">
+                                <col style="width: 180px;">
+                                <col style="width: 160px;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chkall">
+                                            <label for="chkall">기본</label>
+                                        </div>
+                                    </th>
+                                    <th>번호</th>
+                                    <th>대상구분</th>
+                                    <th>제목</th>
+                                    <th>첨부파일</th>
+                                    <th>작성자</th>
+                                    <th>확정일자</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk05" class="chk">
+                                            <label for="chk05">기본</label>
+                                        </div>
+                                    </td>
+                                    <td>48</td>
+                                    <td class="division div-common"><span>공통</span></td>
+                                    <td class="tl">제주지역 CS 옴부즈맨 모집공고</td>
+                                    <td class="file-wrap false">
+                                        <button>
+                                            <i class="i i-file"></i>
+                                        </button>
+                                        <span>-</span>
+                                    </td>
+                                    <td>공무원연금공단관리자</td>
+                                    <td>2023-06-24</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk05" class="chk">
+                                            <label for="chk05">기본</label>
+                                        </div>
+                                    </td>
+                                    <td>47</td>
+                                    <td class="division div-common"><span>공통</span></td>
+                                    <td class="tl">공무원 연금공단 안전관리등급 심사 결과 공개</td>
+                                    <td class="file-wrap false">
+                                        <button>
+                                            <i class="i i-file"></i>
+                                        </button>
+                                        <span>-</span>
+                                    </td>
+                                    <td>공무원연금공단관리자</td>
+                                    <td>2023-06-24</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk05" class="chk">
+                                            <label for="chk05">기본</label>
+                                        </div>
+                                    </td>
+                                    <td>46</td>
+                                    <td class="division div-common"><span>공통</span></td>
+                                    <td class="tl">공무원 연금증 앱 기능개선 안내</td>
+                                    <td class="file-wrap true">
+                                        <button>
+                                            <i class="i i-file"></i>
+                                        </button>
+                                        <span>-</span>
+                                    </td>
+                                    <td>앱서비스 관리자</td>
+                                    <td>2023-06-24</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk05" class="chk">
+                                            <label for="chk05">기본</label>
+                                        </div>
+                                    </td>
+                                    <td>45</td>
+                                    <td class="division div-supply"><span>수급</span></td>
+                                    <td class="tl">공무원 연금공단 시스템 점검에 따른 서비스 일시 중단 안내</td>
+                                    <td class="file-wrap true">
+                                        <button>
+                                            <i class="i i-file"></i>
+                                        </button>
+                                        <span>-</span>
+                                    </td>
+                                    <td>공무원연금공단관리자</td>
+                                    <td>2023-06-24</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk05" class="chk">
+                                            <label for="chk05">기본</label>
+                                        </div>
+                                    </td>
+                                    <td>44</td>
+                                    <td class="division div-tenure"><span>재직</span></td>
+                                    <td class="tl">모바일 공무원 연금증 발급서비스 개시</td>
+                                    <td class="file-wrap false">
+                                        <button>
+                                            <i class="i i-file"></i>
+                                        </button>
+                                        <span>-</span>
+                                    </td>
+                                    <td>앱서비스 관리자</td>
+                                    <td>2023-06-24</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk05" class="chk">
+                                            <label for="chk05">기본</label>
+                                        </div>
+                                    </td>
+                                    <td>43</td>
+                                    <td class="division div-common"><span>공통</span></td>
+                                    <td class="tl">공무원 연금증 앱 출시 이벤트 안내</td>
+                                    <td class="file-wrap false">
+                                        <button>
+                                            <i class="i i-file"></i>
+                                        </button>
+                                        <span>-</span>
+                                    </td>
+                                    <td>공무원연금공단관리자</td>
+                                    <td>2023-06-24</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk05" class="chk">
+                                            <label for="chk05">기본</label>
+                                        </div>
+                                    </td>
+                                    <td>42</td>
+                                    <td class="division div-tenure"><span>재직</span></td>
+                                    <td class="tl">D-연금동행 교육수강 이벤트</td>
+                                    <td class="file-wrap true">
+                                        <button>
+                                            <i class="i i-file"></i>
+                                        </button>
+                                        <span>-</span>
+                                    </td>
+                                    <td>교육관리 담당자</td>
+                                    <td>2023-06-24</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk05" class="chk">
+                                            <label for="chk05">기본</label>
+                                        </div>
+                                    </td>
+                                    <td>41</td>
+                                    <td class="division div-supply"><span>수급</span></td>
+                                    <td class="tl">공무원 연금법 개정안내</td>
+                                    <td class="file-wrap true">
+                                        <button>
+                                            <i class="i i-file"></i>
+                                        </button>
+                                        <span>-</span>
+                                    </td>
+                                    <td>교육관리 담당자</td>
+                                    <td>2023-06-24</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk05" class="chk">
+                                            <label for="chk05">기본</label>
+                                        </div>
+                                    </td>
+                                    <td>40</td>
+                                    <td class="division div-common"><span>공통</span></td>
+                                    <td class="tl">연금공단 혁신 아이디어 공모전 안내</td>
+                                    <td class="file-wrap false">
+                                        <button>
+                                            <i class="i i-file"></i>
+                                        </button>
+                                        <span>-</span>
+                                    </td>
+                                    <td>앱서비스 관리자</td>
+                                    <td>2023-06-24</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk05" class="chk">
+                                            <label for="chk05">기본</label>
+                                        </div>
+                                    </td>
+                                    <td>39</td>
+                                    <td class="division div-common"><span>공통</span></td>
+                                    <td class="tl">연금공단 혁신 아이디어 공모전 안내</td>
+                                    <td class="file-wrap true">
+                                        <button>
+                                            <i class="i i-file"></i>
+                                        </button>
+                                        <span>-</span>
+                                    </td>
+                                    <td>앱서비스 관리자</td>
+                                    <td>2023-06-24</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <table class="basic-table type2" id="">
-                        <colgroup>
-                            <col style="width: 80px;">
-                            <col style="width: 80px;">
-                            <col style="width: 160px;">
-                            <col style="width: 600px;">
-                            <col style="width: 180px;">
-                            <col style="width: 180px;">
-                            <col style="width: 160px;">
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th class="table-chk">
-                                    <div class="check-group">
-                                        <input type="checkbox" id="chkall">
-                                        <label for="chkall">기본</label>
-                                    </div>
-                                </th>
-                                <th>번호</th>
-                                <th>대상구분</th>
-                                <th>제목</th>
-                                <th>첨부파일</th>
-                                <th>작성자</th>
-                                <th>확정일자</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="table-chk">
-                                    <div class="check-group">
-                                        <input type="checkbox" id="chk05" class="chk">
-                                        <label for="chk05">기본</label>
-                                    </div>
-                                </td>
-                                <td>48</td>
-                                <td class="division div-common"><span>공통</span></td>
-                                <td class="tl">제주지역 CS 옴부즈맨 모집공고</td>
-                                <td><i class="i i-file hidden"></i></td>
-                                <td>공무원연금공단관리자</td>
-                                <td>2023-06-24</td>
-                            </tr>
-                            <tr>
-                                <td class="table-chk">
-                                    <div class="check-group">
-                                        <input type="checkbox" id="chk05" class="chk">
-                                        <label for="chk05">기본</label>
-                                    </div>
-                                </td>
-                                <td>47</td>
-                                <td class="division div-common"><span>공통</span></td>
-                                <td class="tl">공무원 연금공단 안전관리등급 심사 결과 공개</td>
-                                <td><i class="i i-file hidden"></i></td>
-                                <td>공무원연금공단관리자</td>
-                                <td>2023-06-24</td>
-                            </tr>
-                            <tr>
-                                <td class="table-chk">
-                                    <div class="check-group">
-                                        <input type="checkbox" id="chk05" class="chk">
-                                        <label for="chk05">기본</label>
-                                    </div>
-                                </td>
-                                <td>46</td>
-                                <td class="division div-common"><span>공통</span></td>
-                                <td class="tl">공무원 연금증 앱 기능개선 안내</td>
-                                <td><i class="i i-file"></i></td>
-                                <td>앱서비스 관리자</td>
-                                <td>2023-06-24</td>
-                            </tr>
-                            <tr>
-                                <td class="table-chk">
-                                    <div class="check-group">
-                                        <input type="checkbox" id="chk05" class="chk">
-                                        <label for="chk05">기본</label>
-                                    </div>
-                                </td>
-                                <td>45</td>
-                                <td class="division div-supply"><span>수급</span></td>
-                                <td class="tl">공무원 연금공단 시스템 점검에 따른 서비스 일시 중단 안내</td>
-                                <td><i class="i i-file"></i></td>
-                                <td>공무원연금공단관리자</td>
-                                <td>2023-06-24</td>
-                            </tr>
-                            <tr>
-                                <td class="table-chk">
-                                    <div class="check-group">
-                                        <input type="checkbox" id="chk05" class="chk">
-                                        <label for="chk05">기본</label>
-                                    </div>
-                                </td>
-                                <td>44</td>
-                                <td class="division div-tenure"><span>재직</span></td>
-                                <td class="tl">모바일 공무원 연금증 발급서비스 개시</td>
-                                <td><i class="i i-file hidden"></i></td>
-                                <td>앱서비스 관리자</td>
-                                <td>2023-06-24</td>
-                            </tr>
-                            <tr>
-                                <td class="table-chk">
-                                    <div class="check-group">
-                                        <input type="checkbox" id="chk05" class="chk">
-                                        <label for="chk05">기본</label>
-                                    </div>
-                                </td>
-                                <td>43</td>
-                                <td class="division div-common"><span>공통</span></td>
-                                <td class="tl">공무원 연금증 앱 출시 이벤트 안내</td>
-                                <td><i class="i i-fil hidden"></i></td>
-                                <td>공무원연금공단관리자</td>
-                                <td>2023-06-24</td>
-                            </tr>
-                            <tr>
-                                <td class="table-chk">
-                                    <div class="check-group">
-                                        <input type="checkbox" id="chk05" class="chk">
-                                        <label for="chk05">기본</label>
-                                    </div>
-                                </td>
-                                <td>42</td>
-                                <td class="division div-tenure"><span>재직</span></td>
-                                <td class="tl">D-연금동행 교육수강 이벤트</td>
-                                <td><i class="i i-file"></i></td>
-                                <td>교육관리 담당자</td>
-                                <td>2023-06-24</td>
-                            </tr>
-                            <tr>
-                                <td class="table-chk">
-                                    <div class="check-group">
-                                        <input type="checkbox" id="chk05" class="chk">
-                                        <label for="chk05">기본</label>
-                                    </div>
-                                </td>
-                                <td>41</td>
-                                <td class="division div-supply"><span>수급</span></td>
-                                <td class="tl">공무원 연금법 개정안내</td>
-                                <td><i class="i i-file"></i></td>
-                                <td>교육관리 담당자</td>
-                                <td>2023-06-24</td>
-                            </tr>
-                            <tr>
-                                <td class="table-chk">
-                                    <div class="check-group">
-                                        <input type="checkbox" id="chk05" class="chk">
-                                        <label for="chk05">기본</label>
-                                    </div>
-                                </td>
-                                <td>40</td>
-                                <td class="division div-common"><span>공통</span></td>
-                                <td class="tl">연금공단 혁신 아이디어 공모전 안내</td>
-                                <td><i class="i i-file hidden"></i></td>
-                                <td>앱서비스 관리자</td>
-                                <td>2023-06-24</td>
-                            </tr>
-                            <tr>
-                                <td class="table-chk">
-                                    <div class="check-group">
-                                        <input type="checkbox" id="chk05" class="chk">
-                                        <label for="chk05">기본</label>
-                                    </div>
-                                </td>
-                                <td>39</td>
-                                <td class="division div-common"><span>공통</span></td>
-                                <td class="tl">연금공단 혁신 아이디어 공모전 안내</td>
-                                <td><i class="i i-file"></i></td>
-                                <td>앱서비스 관리자</td>
-                                <td>2023-06-24</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="pagination">
+                        <ul>
+                            <li class="double-prev"><a href=""><i class="i i-arrow-double-left"></i></a></li>
+                            <li class="prev"><a href=""><i class="i i-arrow-left-2"></i></a></li>
+                            <li class="active"><a href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">5</a></li>
+                            <li><a href="">6</a></li>
+                            <li><a href="">7</a></li>
+                            <li><a href="">8</a></li>
+                            <li><a href="">9</a></li>
+                            <li><a href="">10</a></li>
+                            <li class="next"><a href=""><i class="i i-arrow-right"></i></a></li>
+                            <li class="double-next"><a href=""><i class="i i-arrow-double-right"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="pagination">
-                    <ul>
-                        <li class="double-prev"><a href=""><i class="i i-arrow-double-left"></i></a></li>
-                        <li class="prev"><a href=""><i class="i i-arrow-left-2"></i></a></li>
-                        <li class="active"><a href="">1</a></li>
-                        <li><a href="">2</a></li>
-                        <li><a href="">3</a></li>
-                        <li><a href="">4</a></li>
-                        <li><a href="">5</a></li>
-                        <li><a href="">6</a></li>
-                        <li><a href="">7</a></li>
-                        <li><a href="">8</a></li>
-                        <li><a href="">9</a></li>
-                        <li><a href="">10</a></li>
-                        <li class="next"><a href=""><i class="i i-arrow-right"></i></a></li>
-                        <li class="double-next"><a href=""><i class="i i-arrow-double-right"></i></a></li>
-                    </ul>
-                </div>
-                <!-- <div class="sub-cont">
-                </div> -->
             </div>
         </div>
     </div>
-
+    
     <script src="js/jquery.min.js"></script>
     <script src="js/common.js"></script>
 </body>

@@ -236,12 +236,6 @@ hr{
     justify-content: center;
     gap: 8px;
 }
-.btn.btn-search{
-    background-color: transparent;
-    padding: 0;
-    width: 32px;
-    height: 32px;
-}
 
 /* **************************************** *
  * Table
@@ -259,19 +253,16 @@ hr{
 }
 .count-wrap{
     display: flex;
-    gap: 6px;
+    /* gap: 6px; */
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
 }
 .count-wrap .count{
     display: flex;
 }
-
-.table-chk{
-    display: flex;
-    align-items: center;
+.table-chk .check-group {
     justify-content: center;
-    border: none !important;
-    border-bottom: 1px solid #dddddd !important;
-    padding: 0 8px;
 }
 .table-chk .check-group label{
     text-indent: -999999em;
@@ -279,6 +270,24 @@ hr{
 }
 td.tot{
     font-weight: 700 !important;
+}
+
+/* **************************************** *
+ * Table - file유무 파일유무
+ * **************************************** */
+.file-wrap.true button{
+    display: block;
+    border: none;
+    background-color: transparent;
+}
+.file-wrap.true span{
+    display: none;
+}
+.file-wrap.false button{
+    display: none;
+}
+.file-wrap.false span{
+    display: block;
 }
 
 /* **************************************** *
@@ -291,28 +300,33 @@ td.tot{
 .table-top3 .dropdown-list-wrap{
     width: 100px;
 }
+
 .search-drop{
     display: flex;
     justify-content: space-between;
 }
-.search-drop .dropdown-group .dropdown-button{
-    height: 32px;
+.search-drop .dropdown-button, .search-drop .btn-wrap button{
+    height: 36px;
 }
 .search-drop .search{
     flex: 1;
     overflow: hidden;
     text-overflow: ellipsis;
+    position: relative;
 }
-.search-drop .search input[type=text]{
+.search input[type=text]{
     font-size: 14px;
-    line-height: 32px;
+    line-height: 34px;
     padding: 0 12px 0 16px;
 }
-.search-drop .search input::placeholder{
-    color: #AAAAAA;
+.search .btn-search{
+    background-color: transparent;
+    padding: 0;
+    width: 34px;
+    height: 34px;
 }
-.search-drop .search{
-    position: relative;
+.search input::placeholder{
+    color: #AAAAAA;
 }
 .search-drop .btn-search{
     position: absolute;
