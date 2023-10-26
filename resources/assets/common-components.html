@@ -17,16 +17,22 @@
             <aside>
                 <ul>
                     <li>
-                        <a href="#">BUTTON</a>
+                        <a href="#">Button</a>
                     </li>
                     <li>
-                        <a href="#">MODAL</a>
+                        <a href="#">Modal</a>
                     </li>
                     <li>
-                        <a href="#">INPUT</a>
+                        <a href="#">Input</a>
                     </li>
                     <li>
-                        <a href="#">TAB</a>
+                        <a href="#">Tab</a>
+                    </li>
+                    <li>
+                        <a href="#table">Table</a>
+                    </li>
+                    <li>
+                        <a href="#pagination">Pagination</a>
                     </li>
                 </ul>
             </aside>
@@ -123,7 +129,7 @@
                                         <input type="radio" id="radio05">
                                         <label for="radio05">Radio SM</label>
                                     </div>
-                                    
+
                                 </div>
                             </td>
                         </tr>
@@ -145,6 +151,39 @@
                                         <label for="">기본(disabled)</label>
                                         <input type="text" id="text03" disabled placeholder="텍스트를 입력하세요">
                                     </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="pt-4">
+                                <div class="date-group">
+                                    <h2>날짜</h2>
+                                    <div class="date-wrap">
+                                        <input type="date" placeholder="시작일">
+                                        <span>-</span>
+                                        <input type="date">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="pt-4">
+                                <div class="input-group textarea">
+                                    <label for="">텍스트(여러줄)</label>
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="텍스트를 입력해주세요"></textarea>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="pt-4">
+                                <div class="file-group">
+                                    <h2>파일첨부</h2>
+                                    <label for="fileupload">버튼명</label>
+                                    <input type="file" id="fileupload"/>
+                                    <span>* 반드시 양식 파일을 이용해 주세요.</span>
                                 </div>
                             </td>
                         </tr>
@@ -267,21 +306,9 @@
                             </td>
                         </tr>
 
-                        <tr>
-                            <td class="pt-4">
-                                <div class="date-group">
-                                    <h2>타이틀</h2>
-                                    <div class="date-wrap">
-                                        <input type="date" placeholder="시작일">
-                                        <span>-</span>
-                                        <input type="date">
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
                     </tbody>
                 </table>
-                <table>
+                <table id="table">
                     <tbody>
                         <tr>
                             <td>Tab</td>
@@ -298,7 +325,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </td>     
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -320,9 +347,9 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>d</td>     
-                                            <td>d</td>     
-                                            <td>d</td>     
+                                            <td>d</td>
+                                            <td>d</td>
+                                            <td>d</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -345,9 +372,9 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>d</td>     
-                                            <td>d</td>     
-                                            <td>d</td>     
+                                            <td>d</td>
+                                            <td>d</td>
+                                            <td>d</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -356,7 +383,7 @@
                     </tbody>
                 </table>
 
-                <table>
+                <table id="pagination">
                     <tbody>
                         <tr>
                             <td>pagination</td>
@@ -365,7 +392,8 @@
                             <td>
                                 <div class="pagination m-0">
                                     <ul>
-                                        <li class="double-prev"><a href=""><i class="i i-arrow-double-left"></i></a></li>
+                                        <li class="double-prev"><a href=""><i class="i i-arrow-double-left"></i></a>
+                                        </li>
                                         <li class="prev"><a href=""><i class="i i-arrow-left-2"></i></a></li>
                                         <li class="active"><a href="">1</a></li>
                                         <li><a href="">2</a></li>
@@ -378,7 +406,8 @@
                                         <li><a href="">9</a></li>
                                         <li><a href="">10</a></li>
                                         <li class="next"><a href=""><i class="i i-arrow-right"></i></a></li>
-                                        <li class="double-next"><a href=""><i class="i i-arrow-double-right"></i></a></li>
+                                        <li class="double-next"><a href=""><i class="i i-arrow-double-right"></i></a>
+                                        </li>
                                     </ul>
                                 </div>
                             </td>
