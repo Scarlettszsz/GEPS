@@ -177,9 +177,8 @@
 
 .main-notice ul li {
     align-items: center;
-    border-bottom: 1px solid #eee;
-    ;
-    color: #000;
+    border-bottom: 1px solid #eeeeee;
+    color: #000000;
     cursor: pointer;
     display: flex;
     font-size: 14px;
@@ -220,7 +219,7 @@
 }
 
 .main-app ul li:nth-child(1) {
-    border-right: 1px solid #eee;
+    border-right: 1px solid #eeeeee;
     padding-right: 40px;
 }
 
@@ -376,7 +375,7 @@
 
 .proceeding.gray {
     background: #fff;
-    border-color: #999;
+    border-color: #999999;
     color: #444;
 }
 
@@ -386,13 +385,13 @@
 }
 
 .dl-group dl {
-    border-right: 1px solid #ddd;
+    border-right: 1px solid #dddddd;
     text-align: center;
     width: 20%;
 }
 
 .dl-group.type2 dl {
-    border-right: 1px solid #ddd;
+    border-right: 1px solid #dddddd;
     text-align: center;
     width: 33.33%;
 }
@@ -491,7 +490,6 @@
 .chart-legend span.purple {
     background: #889AB0;
 }
-
 
 .check-group .chart-legend {
     align-items: center;
