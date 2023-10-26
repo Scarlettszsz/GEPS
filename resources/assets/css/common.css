@@ -763,7 +763,6 @@ h3.title {
     background-size: cover;
 }
 
-
 .radio-group input[type=radio]:disabled:hover+label::before {
     background: url(../img/ico/i-radio-disabled.png);
     background-size: cover;
