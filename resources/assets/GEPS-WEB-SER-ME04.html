@@ -123,18 +123,279 @@
             </div>
         </header>
         <div class="content">
-            <div class="sub-cont">
-                <div class="container">
-                    <div class="search-wrap">
-                        <div class="legend">메시징 관리</div>
-                        <ul class="bread-crumb">
-                            <li><i class="i i-home"></i></li>
-                            <li><i class="i i-arrow-left"></i></li>
-                            <li class="active">서비스 관리</li>
-                            <li><i class="i i-arrow-left"></i></li>
-                            <li>메시징 관리</li>
-                        </ul>
+            <div class="sub-cont container">
+                <div class="search-wrap">
+                    <div class="legend">메시징 관리</div>
+                    <ul class="bread-crumb">
+                        <li><i class="i i-home"></i></li>
+                        <li><i class="i i-arrow-left"></i></li>
+                        <li class="active">서비스 관리</li>
+                        <li><i class="i i-arrow-left"></i></li>
+                        <li>메시징 관리</li>
+                    </ul>
+                </div>
+                <form action="#" class="form form-border-lgray">
+                    <div class="options-wrap g32 pa4056">
+                        <div class="y-flex g20">
+                            <div class="radio-wrap">
+                                <h2>메시지 유형 선택</h2>
+                                <div class="radio-group">
+                                    <input type="radio" id="radio01" checked>
+                                    <label for="radio01">PUSH</label>
+                                </div>
+
+                                <div class="radio-group">
+                                    <input type="radio" id="radio02">
+                                    <label for="radio02">UMS</label>
+                                </div>
+                            </div>
+                            <div class="line-group">
+                                <h2>수신대상 등록</h2>
+                                <div class="line-wrap">
+                                    <input type="text" placeholder="PUSH인 경우에는 고객번호, UMS인 경우에는 전화번호를 입력해 주세요. 대상이 여럿인 경우 콤마( , )를 사용해서 구분해 주세요.">
+                                    <span class="mt8 cc">※ 반드시 메시지 유형( PUSH / UMS )에 맞는 양식을 이용해 주세요. 수신대상을 별도로 등록하지 않으면 신상수급권 확인 서비스에 등록된 사용자를 기본값으로 합니다.</span>
+                                    <div class="btn-wrap mt20">
+                                        <button type="button" class="btn btn-sm btn-outline-gray">양식 다운로드 (PUSH)</button>
+                                        <button type="button" class="btn btn-sm btn-outline-gray">양식 다운로드 (UMS)</button>
+                                        <div class="file-group">
+                                            <h2 class="hidden">파일첨부</h2>
+                                            <label for="fileupload">수신대상 엑셀 업로드</label>
+                                            <input type="file" id="fileupload">
+                                            <span>* 반드시 양식 파일을 이용해 주세요.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="radio-wrap">
+                                <h2>신상조사 진행상태</h2>
+                                <div class="radio-group">
+                                    <input type="radio" id="radio03" checked>
+                                    <label for="radio03">전체</label>
+                                </div>
+
+                                <div class="radio-group">
+                                    <input type="radio" id="radio04">
+                                    <label for="radio04">진행</label>
+                                </div>
+
+                                <div class="radio-group">
+                                    <input type="radio" id="radio05">
+                                    <label for="radio05">종료</label>
+                                </div>
+                            </div>
+                            <div class="check-wrap">
+                                <h2>신상조사 수행여부</h2>
+                                <div class="check-group">
+                                    <input type="checkbox" id="chk" checked>
+                                    <label for="chk">수행</label>
+                                </div>
+
+                                <div class="check-group">
+                                    <input type="checkbox" id="chk02">
+                                    <label for="chk02">실패</label>
+                                </div>
+
+                                <div class="check-group">
+                                    <input type="checkbox" id="chk03">
+                                    <label for="chk03">미응답</label>
+                                </div>
+
+                                <div class="check-group">
+                                    <input type="checkbox" id="chk04">
+                                    <label for="chk04">미실시</label>
+                                </div>
+                            </div>
+                            <div class="radio-wrap">
+                                <h2>생체정보 등록여부</h2>
+                                <div class="radio-group">
+                                    <input type="radio" id="radio06" checked>
+                                    <label for="radio06">전체</label>
+                                </div>
+
+                                <div class="radio-group">
+                                    <input type="radio" id="radio07">
+                                    <label for="radio07">등록</label>
+                                </div>
+
+                                <div class="radio-group">
+                                    <input type="radio" id="radio08">
+                                    <label for="radio08">미등록</label>
+                                </div>
+                            </div>
+                            <div class="radio-wrap">
+                                <h2>본인인증 여부</h2>
+                                <div class="radio-group">
+                                    <input type="radio" id="radio09" checked>
+                                    <label for="radio09">전체</label>
+                                </div>
+
+                                <div class="radio-group">
+                                    <input type="radio" id="radio10">
+                                    <label for="radio10">인증</label>
+                                </div>
+
+                                <div class="radio-group">
+                                    <input type="radio" id="radio11">
+                                    <label for="radio11">미인증</label>
+                                </div>
+                            </div>
+                            <div class="check-wrap">
+                                <h2>연금증 발급</h2>
+                                <div class="check-group">
+                                    <input type="checkbox" id="chk05" checked>
+                                    <label for="chk05">재직</label>
+                                </div>
+
+                                <div class="check-group">
+                                    <input type="checkbox" id="chk06">
+                                    <label for="chk06">퇴직</label>
+                                </div>
+
+                                <div class="check-group">
+                                    <input type="checkbox" id="chk07">
+                                    <label for="chk07">수급</label>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="d-flex jcfe">
+                            <button type="button" class="btn btn-md btn-outline-primary">적용</button>
+                        </div>
                     </div>
+                    <div class="options-wrap pa4056 bd-lgray mt20">
+                        <div class="input-group aic">
+                            <h4 class="title">수신대상 확인</h4>
+                            <div class="count-wrapper">
+                                <ul class="count-wrap">
+                                    <li>325</li>
+                                    <li>건</li>
+                                </ul>
+                                <button type="button" class="btn btn-sm btn-gray">명단확인</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <h2 class="title mt80 title-style1">메시지 입력</h2>
+                <form action="" class="write-wrap bbt-lgray">
+                    <div class="input-group">
+                        <label for="">메시지 제목</label>
+                        <input type="text" placeholder="제목을 입력하세요." value="2023 여름 신상조사 참여 이벤트">
+                    </div>
+                    <div class="input-group">
+                        <label for="">답변 내용</label>
+                        <!-- form edit filed -->
+                        <textarea name="" id="" style="height:230px; flex:1; border: solid 1px #DDDDDD; border-radius: 4px; resize: none; padding: 16px;" placeholder="내용을 입력하세요.">2023년 여름 신상조사를 7월 31일까지 완료하시면 추첨을 통해 커피 기프티콘을 보내 드립니다.</textarea>
+                    </div>
+                    <div class="input-group">
+                        <label for="">
+                            <ul class="d-flex aic jcsb">
+                                <li>링크주소</li>
+                                <li class="d-flex aic jcsb"><i class="i i-qustion"></i></li>
+                            </ul>
+                        </label>
+                        <input type="text" placeholder="주소를 입력하세요." value="https://www.test.test/test">
+                    </div>
+                    <div class="input-group">
+                        <label for="">
+                            <ul class="d-flex aic jcsb">
+                                <li>이미지주소</li>
+                                <li class="d-flex aic jcsb"><i class="i i-qustion"></i></li>
+                            </ul>
+                        </label>
+                        <input type="text" placeholder="주소를 입력하세요." value="https:://www.imagetest.test/test">
+                    </div>
+                    <div class="multi-wrapper">
+                        <h2>전송시간</h2>
+                        <div class="multi-wrap">
+                            <div class="radio-wrap">
+                                <div class="radio-group">
+                                    <input type="radio" id="radio12">
+                                    <label for="radio12">즉시발송</label>
+                                </div>
+        
+                                <div class="radio-group">
+                                    <input type="radio" id="radio13" checked>
+                                    <label for="radio13">예약발송</label>
+                                </div>
+                            </div>
+                            <div class="d-flex aic g16">
+                                <div class="date-group">
+                                    <h2 class="hidden">날짜</h2>
+                                    <div class="date-time-wrap g4">
+                                        <input type="date">
+                                        <div class="dropdown-group">
+                                            <h2 class="hidden">시간</h2>
+                                            <div class="d-flex g4">
+                                                <div class="dropdown-list-wrap">
+                                                    <button class="dropdown-button" data-target="drop01">시간</button>
+                                                    <ul id="drop01" class="dropdown-list">
+                                                        <li><a href="#">01</a></li>
+                                                        <li><a href="#">02</a></li>
+                                                        <li><a href="#">03</a></li>
+                                                        <li><a href="#">04</a></li>
+                                                        <li><a href="#">05</a></li>
+                                                        <li><a href="#">06</a></li>
+                                                        <li><a href="#">07</a></li>
+                                                        <li><a href="#">08</a></li>
+                                                        <li><a href="#">09</a></li>
+                                                        <li><a href="#">10</a></li>
+                                                        <li><a href="#">11</a></li>
+                                                        <li><a href="#">12</a></li>
+                                                        <li><a href="#">13</a></li>
+                                                        <li><a href="#">14</a></li>
+                                                        <li><a href="#">15</a></li>
+                                                        <li><a href="#">16</a></li>
+                                                        <li><a href="#">17</a></li>
+                                                        <li><a href="#">18</a></li>
+                                                        <li><a href="#">19</a></li>
+                                                        <li><a href="#">20</a></li>
+                                                        <li><a href="#">21</a></li>
+                                                        <li><a href="#">22</a></li>
+                                                        <li><a href="#">23</a></li>
+                                                        <li><a href="#">24</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="dropdown-list-wrap">
+                                                    <button class="dropdown-button" data-target="drop02">시간</button>
+                                                    <ul id="drop02" class="dropdown-list">
+                                                        <li><a href="#">01</a></li>
+                                                        <li><a href="#">02</a></li>
+                                                        <li><a href="#">03</a></li>
+                                                        <li><a href="#">04</a></li>
+                                                        <li><a href="#">05</a></li>
+                                                        <li><a href="#">06</a></li>
+                                                        <li><a href="#">07</a></li>
+                                                        <li><a href="#">08</a></li>
+                                                        <li><a href="#">09</a></li>
+                                                        <li><a href="#">10</a></li>
+                                                        <li><a href="#">11</a></li>
+                                                        <li><a href="#">12</a></li>
+                                                        <li><a href="#">13</a></li>
+                                                        <li><a href="#">14</a></li>
+                                                        <li><a href="#">15</a></li>
+                                                        <li><a href="#">16</a></li>
+                                                        <li><a href="#">17</a></li>
+                                                        <li><a href="#">18</a></li>
+                                                        <li><a href="#">19</a></li>
+                                                        <li><a href="#">20</a></li>
+                                                        <li><a href="#">21</a></li>
+                                                        <li><a href="#">22</a></li>
+                                                        <li><a href="#">23</a></li>
+                                                        <li><a href="#">24</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="cc">* 예약발송 시각은 5분 단위로 설정하실 수 있습니다.</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="d-flex jcfe mt32">
+                    <button type="button" class="btn btn-lg btn-primary">메시지 발송</button>
                 </div>
             </div>
         </div>

@@ -4,9 +4,6 @@
  *
  */
 
-/* **************************************** *
- * GEPS-WEB-BIV-CU01
- * **************************************** */
 
  /* **************************************** *
  * in & logo
@@ -43,6 +40,12 @@
     height: 16px;
 
 }
+.i.i-qustion{
+    background-image: url(../img/ico/i-qustion.png);
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
 .i.i-file{
     background-image: url(../img/ico/i-file.png);
     width: 24px;
@@ -52,35 +55,45 @@
 /* **************************************** *
  * flex
  * **************************************** */
- .d-flex{
+.d-flex{
     display: flex;
     flex-direction: row !important;
- }
- .y-flex{
+}
+.y-flex{
     display: flex;
     flex-direction: column !important;
- }
- .aic{
+}
+.aic{
     align-items: center;
- }
- .aie{
+}
+.aie{
     align-items: flex-end;
- }
- .ais{
+}
+.ais{
     align-items: flex-start;
- }
- .jcsb{
+}
+.jcsb{
     justify-content: space-between;
- }
- .jcsa{
+}
+.jcsa{
     justify-content: space-around;
- }
- .jcc{
+}
+.jcc{
     justify-content: center;
- }
+}
 .jcfe{
     justify-content: flex-end;
 }
+.jcfs{
+    justify-content: flex-start;
+}
+.jcfe{
+    justify-content: flex-end;
+}
+.f1{
+    flex: 1;
+}
+
 
 /* **************************************** *
  * Common2
@@ -98,9 +111,7 @@ hr{
 .hidden{
     display: none;
 }
-/* **************************************** *
- * Common2
- * **************************************** */
+
 .tl{
     text-align: left !important;
 }
@@ -111,14 +122,57 @@ hr{
     text-align: center !important;
 }
 
+.bread-crumb{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #999999;
+    font-size: 13px;
+    line-height: 18px;
+}
+.bread-crumb li:last-child{
+    color: #000000;
+}
+
+.btn-wrap{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.bd-gray{
+    border-color: #666666;
+}
+.bd-lgray{
+    border-color: #dddddd;
+}
+.bbt-gray{
+    border-bottom: 1px solid #666666;
+}
+.bbt-lgray{
+    border-bottom: 1px solid #dddddd;
+}
+/* .bd-gray{
+    border: 1px solid #dddddd;
+} */
+
 /* **************************************** *
  * Margin & padding & gap
  * **************************************** */
+.mt8{
+    margin-top: 8px;
+}
+.mt20{
+    margin-top: 20px;
+}
 .mt24{
     margin-top: 24px;
 }
 .mt32{
     margin-top: 32px;
+}
+.mt80{
+    margin-top: 80px;
 }
 .mb16{
     margin-bottom: 16px;
@@ -128,6 +182,9 @@ hr{
 }
 .mb120{
     margin-bottom: 120px;
+}
+.mr40{
+    margin-right: 40px;
 }
 .pt64{
     padding-top: 64px;
@@ -141,6 +198,12 @@ hr{
 .g8{
     gap: 8px;
 }
+.g16{
+    gap: 16px;
+}
+.g20{
+    gap: 20px;
+}
 .g32{
     gap: 32px;
 }
@@ -153,59 +216,16 @@ hr{
 .pa4048{
     padding: 40px 48px;
 }
-/* **************************************** *
- * Content
- * **************************************** */
-.search-wrapper{
-    /* background-color: #F4F5F7; */
-    padding: 80px 0;
-}
-.form{
-    border-radius: 16px;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    -ms-border-radius: 16px;
-    -o-border-radius: 16px;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    /* flex: 1; */
-}
-.search-wrap{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-.search-wrap .legend{
-    color: #000000;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 40px;
-}
-.bread-crumb{
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    color: #999999;
-    font-size: 13px;
-    line-height: 18px;
-}
-.bread-crumb li:last-child{
-    color: #000000;
+.pa4056{
+    padding: 40px 56px;
 }
 
-.options-wrapper{
-    display: flex;
-    gap: 80px;
-}
-.options-wrap{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    flex: 1;
-}
+/* **************************************** *
+ * GEPS-WEB-BIV-CU01 & GEPS-WEB-SER-ME04
+ * **************************************** */
 .options-wrap .input-group,
 .options-wrap .date-group,
+.options-wrap .line-group,
 .options-wrap .radio-wrap,
 .options-wrap .check-wrap,
 .options-wrap .dropdown-group{
@@ -214,6 +234,7 @@ hr{
 }
 .options-wrap .input-group label,
 .options-wrap .date-group h2,
+.options-wrap .line-group h2,
 .options-wrap .radio-wrap h2,
 .options-wrap .check-wrap h2,
 .options-wrap .dropdown-group h2{
@@ -227,74 +248,19 @@ hr{
 .options-wrap .input-group input{
     flex: 1;
 }
-
-/* **************************************** *
- * Button
- * **************************************** */
-.btn-wrap{
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-}
-.manage-btn-group{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    width: 100%;
-    position: relative;
-}
-.manage-btn-group::after{
-    position: absolute;
-    content: '';
-    border-right: 1px solid #dddddd;
-    height: 12px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-}
-.manage-btn-group button{
-    border: none;
-    background: transparent;
-    padding: 0;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-    text-decoration-line: underline;
-}
-.manage-btn-group button.modify{
-    color: #666666;
-}
-.manage-btn-group button.delete{
-    color: #E34140;
-}
-/* **************************************** *
- * Table
- * **************************************** */
-.table-top2{
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-}
-.table-top3{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-bottom: 16px;
-}
 .count-wrap{
     display: flex;
-    /* gap: 6px; */
     font-size: 20px;
     line-height: 28px;
     font-weight: 500;
 }
 .count-wrap .count{
     display: flex;
+}
+.table-top2{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 .table-chk .check-group {
     justify-content: center;
@@ -306,41 +272,58 @@ hr{
 td.tot{
     font-weight: 700 !important;
 }
-.img-table tbody tr td{
-    height: 124px;
-}
-.img-table .table-img{
-    height: inherit;
+.options-wrapper{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 24px;
+    gap: 80px;
 }
-.img-table img{
-    height: 100%;
-}
-
-/* **************************************** *
- * Table - file유무 파일유무
- * **************************************** */
-.file-wrap.true button{
-    display: block;
-    border: none;
-    background-color: transparent;
-}
-.file-wrap.true span{
-    display: none;
-}
-.file-wrap.false button{
-    display: none;
-}
-.file-wrap.false span{
-    display: block;
+.options-wrap{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
 }
 
 /* **************************************** *
- * Search & drop down wrap
+ * GEPS-WEB-BIV-CU01 & GEPS-WEB-STA-BV01
  * **************************************** */
+.search-wrapper{
+    padding: 80px 0;
+}
+.search-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.search-wrap .legend{
+    color: #000000;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+}
+.form{
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* **************************************** *
+ * GEPS-WEB-SER-NO01
+ * **************************************** */
+.table-top3{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 16px;
+}
 .table-top3 .dropdown-group{
     width: 408px;
     gap: 8px;
@@ -388,9 +371,6 @@ td.tot{
     -o-transform: translateY(-50%);
 }
 
-/* **************************************** *
- * 대상구분
- * **************************************** */
 .division span{
     font-size: 12px !important;
     line-height: 16px;
@@ -414,23 +394,41 @@ td.tot{
     border-color: #3B89FE;
     color: #3B89FE;
 }
+
+.file-wrap.true button{
+    display: block;
+    border: none;
+    background-color: transparent;
+}
+.file-wrap.true span{
+    display: none;
+}
+.file-wrap.false button{
+    display: none;
+}
+.file-wrap.false span{
+    display: block;
+}
+
 /* **************************************** *
- * write - 게시글 작성
+ * GEPS-WEB-SER-NO02 & GEPS-WEB-SER-FA02
  * **************************************** */
 form.write-wrap{
     padding: 24px 0;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    border-bottom: 1px solid #666666;
 }
 .write-wrap .input-group,
-.write-wrap .dropdown-group{
+.write-wrap .dropdown-group,
+.write-wrap .multi-wrapper{
+    display: flex;
     flex-direction: row !important;
     gap: 40px;
 }
 .write-wrap .input-group label,
-.write-wrap .dropdown-group h2{
+.write-wrap .dropdown-group h2,
+.write-wrap .multi-wrapper h2{
     width: 104px !important;
     line-height: 46px;
     font-size: 15px;
@@ -438,4 +436,146 @@ form.write-wrap{
 }
 .write-wrap .input-group input{
     flex: 1;
+}
+
+/* **************************************** *
+ * GEPS-WEB-SER-PO01
+ * **************************************** */
+.img-table tbody tr td{
+    height: 124px;
+}
+.img-table .table-img{
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+}
+.img-table img{
+    height: 100%;
+}
+.manage-btn-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    position: relative;
+}
+.manage-btn-group::after{
+    position: absolute;
+    content: '';
+    border-right: 1px solid #dddddd;
+    height: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.manage-btn-group button{
+    border: none;
+    background: transparent;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-decoration-line: underline;
+}
+.manage-btn-group button.modify{
+    color: #666666;
+}
+.manage-btn-group button.delete{
+    color: #E34140;
+}
+
+/* **************************************** *
+ * GEPS-WEB-SER-ME04
+ * **************************************** */
+h4.title{
+    color: #000000;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+}
+.form-border-lgray .options-wrap{
+    border: 1px solid #dddddd;
+}
+.count-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.count-wrapper .count-wrap{
+    display: flex;
+    align-items: center;
+    color: #000000;
+    gap: 2px;
+}
+.count-wrapper .count-wrap li:first-of-type{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+}
+.count-wrapper .count-wrap li:last-of-type{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.line-group{
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+.line-group .line-wrap{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.line-group .line-wrap input[type=text]{
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 12px 16px;
+    transition: all .5s;
+}
+.line-group .line-wrap input[type=text]::placeholder{
+    color: #AAAAAA;
+}
+span.cc{
+    color: #666666;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.line-group .line-wrap .btn-wrap{
+    justify-content: flex-start;
+    gap: 8px;
+}
+.title-style1{
+    padding-bottom: 16px;
+    border-bottom: 1px solid #1C2C49;
+}
+.multi-wrap{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex: 1;
+}
+.date-group .date-time-wrap {
+    align-items: center;
+    display: flex;
+    gap: 4px;
+    width: 100%;
+}
+.date-group .date-time-wrap .dropdown-button{
+    width: 86px;
+}
+.date-group .date-time-wrap input[type=date]{
+    width: 178px;
 }
