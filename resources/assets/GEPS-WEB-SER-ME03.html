@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공무원연금공단</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="header-top-wrap">
+                <div class="container">
+                    <div class="header-top">
+                        <ul>
+                            <li>
+                                <i class="i i-user"></i>
+                                <a href="#">관리자</a>님 (접속 : 2023-07-17 15:19:02)
+                            </li>
+                            <li>
+                                <i class="i i-clock"></i><span>00:29:49</span>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-mini btn-outline-gray">로그아웃</button>
+                        <!-- <a href="#">로그인</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom-wrap">
+                <div class="container">
+                    <div class="header-bottom">
+                        <a href="#" class="header-logo">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                        <div class="header-right">
+                            <nav class="header-navbar">
+                                <ul>
+                                    <li><a href="#">신상조사</a></li>
+                                    <li><a href="#">생체정보 등록현황</a></li>
+                                    <li><a href="#">VC 발급현황</a></li>
+                                    <li><a href="#">통계조회</a></li>
+                                    <li class="active"><a href="#">서비스 관리</a></li>
+                                    <li><a href="#">시스템관리</a></li>
+                                </ul>
+                            </nav>
+                            <button type="button" class="header-menu">
+                                <i class="i i-menu"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-sub-wrap">
+                <div class="container">
+                    <div class="header-sub-navbar">
+                        <div class="col-2">
+                            <h5 class="title">신상조사</h5>
+                            <ul>
+                                <li><a href="#">신상조사 실시현황</a></li>
+                                <li><a href="#">신상조사 등록관리</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="title">생체정보 등록현황</h5>
+                            <ul>
+                                <li><a href="#">생체정보 등록현황</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="title">VC 발급현황</h5>
+                            <ul>
+                                <li><a href="#">VC 발급현황</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="title">통계조회</h5>
+                            <div class="col-group">
+                                <button class="dropdown-button" data-target="subNav01">신상조사 통계</button>
+                                <ul id="subNav01" class="dropdown-list">
+                                    <li><a href="#">신상조사 실시/응답</a></li>
+                                    <li><a href="#">응답 소요시간</a></li>
+                                    <li><a href="#">신상조사 통계지표</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-group">
+                                <button class="dropdown-button" data-target="subNav02">서비스 통계</button>
+                                <ul id="subNav02" class="dropdown-list">
+                                    <li><a href="#">VC 발급현황</a></li>
+                                    <li><a href="#">연금증 발급현황</a></li>
+                                    <li><a href="#">OCR 본인인증 신분증</a></li>
+                                    <li><a href="#">DID 검증이력</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-group">
+                                <button class="dropdown-button active">사용자 통계</button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="title">서비스 관리</h5>
+                            <ul>
+                                <li><a href="#">공지사항 관리</a></li>
+                                <li><a href="#">FAQ 관리</a></li>
+                                <li><a href="#">팝업 관리</a></li>
+                                <li><a href="#">메시징 관리</a></li>
+                                <li><a href="#">서비스 이용약관 관리</a></li>
+                                <li><a href="#">생체정보 안내기간 설정</a></li>
+                                <li><a href="#">신상조사 안내관리</a></li>
+                                <li><a href="#">앱서비스 관리</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="title">시스템관리</h5>
+                            <ul>
+                                <li><a href="#">관리자 관리</a></li>
+                                <li><a href="#">메뉴권한 관리</a></li>
+                                <li><a href="#">시스템 이력조회</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="sub-cont container">
+                <div class="search-wrap">
+                    <div class="legend">메시징 관리</div>
+                    <ul class="bread-crumb">
+                        <li><i class="i i-home"></i></li>
+                        <li><i class="i i-arrow-left"></i></li>
+                        <li class="active">서비스 관리</li>
+                        <li><i class="i i-arrow-left"></i></li>
+                        <li>메시징 관리</li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <div class="table-wrap col-table pt64">
+                        <div class="table-top4">
+                            <h2 class="title">전송 메시지 정보</h2>
+                            <div class="d-flex f1 jcfe g8">
+                                <div class="dropdown-group">
+                                    <div class="dropdown-list-wrap">
+                                        <button class="dropdown-button" data-target="drop02">전체</button>
+                                        <ul id="drop02" class="dropdown-list" style="display: none;">
+                                            <li class="select"><a href="#">전체</a></li>
+                                            <li><a href="#">전송실패</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-md btn-primary">재발송</button>
+                            </div>
+                        </div>
+                        <table class="basic-table col-table type2 mt16" id="">
+                            <colgroup>
+                                <col style="width: 12.5%;">
+                                <col style="width: 12.5%;">
+                                <col style="width: 12.5%;">
+                                <col style="width: 12.5%;">
+                                <col style="width: 12.5%;">
+                                <col style="width: 12.5%;">
+                                <col style="width: 12.5%;">
+                                <col style="width: 12.5%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>제목</th>
+                                    <th colspan="3" class="bg-white tl"></th>
+                                    <th>발신번호</th>
+                                    <th colspan="3" class="bg-white tl">-</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="bg-navy">총 전송</td>
+                                    <td colspan="3" class="tl">583건</td>
+                                    <td class="bg-navy">관리자명</td>
+                                    <td class="tl">연금공단관리자님</td>
+                                    <td class="bg-navy">전송시간</td>
+                                    <td class="tl">2023-06-28 11:30</td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-navy">전송 수</td>
+                                    <td class="tl">583건</td>
+                                    <td class="bg-navy">전송성공</td>
+                                    <td class="tl">524건</td>
+                                    <td class="bg-navy">전송실패</td>
+                                    <td class="tl">12건</td>
+                                    <td class="bg-navy">전송불가</td>
+                                    <td class="tl">47건</td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-navy">본문내용</td>
+                                    <td colspan="7" class="main-text">
+                                        <div class="tl">
+                                            2023년 여름 신상조사를 7월 31일까지 완료하시면 추첨을 통해 커피 기프티콘을 보내 드립니다.
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-wrap pt64">
+                        <div class="table-top4">
+                            <h2 class="title">수신현황</h2>
+                        </div>
+                        <table class="basic-table type2 mt16" id="">
+                            <colgroup>
+                                <col style="width: 20%;">
+                                <col style="width: 20%;">
+                                <col style="width: 20%;">
+                                <col style="width: 20%;">
+                                <col style="width: 20%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th>수신정보</th>
+                                    <th>성공여부</th>
+                                    <th>전송완료시간</th>
+                                    <th>수신상태코드</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>583</td>
+                                    <td>82151234785</td>
+                                    <td>성공</td>
+                                    <td>2023-06-28 11:30:00</td>
+                                    <td>SUCC</td>
+                                </tr>
+                                <tr>
+                                    <td>582</td>
+                                    <td>82151234785</td>
+                                    <td>성공</td>
+                                    <td>2023-06-28 11:30:00</td>
+                                    <td>SUCC</td>
+                                </tr>
+                                <tr>
+                                    <td>581</td>
+                                    <td>82151234785</td>
+                                    <td>실패</td>
+                                    <td>2023-06-28 11:30:00</td>
+                                    <td>FAIL</td>
+                                </tr>
+                                <tr>
+                                    <td>580</td>
+                                    <td>82151234785</td>
+                                    <td>성공</td>
+                                    <td>2023-06-28 11:30:00</td>
+                                    <td>SUCC</td>
+                                </tr>
+                                <tr>
+                                    <td>579</td>
+                                    <td>82151234785</td>
+                                    <td>성공</td>
+                                    <td>2023-06-28 11:30:00</td>
+                                    <td>SUCC</td>
+                                </tr>
+                                <tr>
+                                    <td>578</td>
+                                    <td>82151234785</td>
+                                    <td>성공</td>
+                                    <td>2023-06-28 11:30:00</td>
+                                    <td>SUCC</td>
+                                </tr>
+                                <tr>
+                                    <td>576</td>
+                                    <td>82151234785</td>
+                                    <td>성공</td>
+                                    <td>2023-06-28 11:30:00</td>
+                                    <td>SUCC</td>
+                                </tr>
+                                <tr>
+                                    <td>575</td>
+                                    <td>82151234785</td>
+                                    <td>실패</td>
+                                    <td>2023-06-28 11:30:00</td>
+                                    <td>FAIL</td>
+                                </tr>
+                                <tr>
+                                    <td>574</td>
+                                    <td>82151234785</td>
+                                    <td>성공</td>
+                                    <td>2023-06-28 11:30:00</td>
+                                    <td>SUCC</td>
+                                </tr>
+                                <tr>
+                                    <td>573</td>
+                                    <td>82151234785</td>
+                                    <td>성공</td>
+                                    <td>2023-06-28 11:30:00</td>
+                                    <td>SUCC</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pagination">
+                        <ul>
+                            <li class="double-prev"><a href=""><i class="i i-arrow-double-left"></i></a></li>
+                            <li class="prev"><a href=""><i class="i i-arrow-left-2"></i></a></li>
+                            <li class="active"><a href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">5</a></li>     
+                            <li><a href="">6</a></li>
+                            <li><a href="">7</a></li>
+                            <li><a href="">8</a></li>
+                            <li><a href="">9</a></li>
+                            <li><a href="">10</a></li>
+                            <li class="next"><a href=""><i class="i i-arrow-right"></i></a></li>
+                            <li class="double-next"><a href=""><i class="i i-arrow-double-right"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

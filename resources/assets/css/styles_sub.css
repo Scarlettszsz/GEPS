@@ -162,6 +162,9 @@ hr{
 .mt8{
     margin-top: 8px;
 }
+.mt16{
+    margin-top: 16px;
+}
 .mt20{
     margin-top: 20px;
 }
@@ -578,4 +581,52 @@ span.cc{
 }
 .date-group .date-time-wrap input[type=date]{
     width: 178px;
+}
+
+/* **************************************** *
+ * GEPS-WEB-SER-ME03
+ * **************************************** */
+.table-top4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.table-top4 .dropdown-group .dropdown-list-wrap .dropdown-button, .table-top4 button{
+    height: 36px;
+}
+.table-top4 .dropdown-group .dropdown-list-wrap .dropdown-button{
+    width: 100px;
+}
+.table-top4 button{
+    width: 76px;
+}
+
+.col-table th.bg-white, .col-table thead{
+    border-top: 1px solid #ddd;
+}
+.col-table th.bg-white, .col-table th.bg-white{
+    background: #ffffff;
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    height: 56px;
+}
+.col-table th.bg-white, .col-table td{
+    padding: 12px 24px;
+}
+.col-table th.bg-navy, .col-table td.bg-navy{
+    background: #1C2C49;
+    border: 1px solid #3E4B64;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    height: 56px;
+    position: sticky;
+    top: 0;
+}
+.col-table td.main-text{
+    height: 166px;
+}
+.col-table td.main-text > div{
+    height: inherit;
 }
