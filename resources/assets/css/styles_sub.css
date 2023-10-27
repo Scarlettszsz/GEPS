@@ -353,7 +353,8 @@ td.tot{
     display: flex;
     justify-content: space-between;
 }
-.search-drop .dropdown-button, .search-drop .btn-wrap button{
+
+.search-drop .dropdown-group .dropdown-list-wrap .dropdown-button{
     height: 36px;
 }
 .search-drop .search{
