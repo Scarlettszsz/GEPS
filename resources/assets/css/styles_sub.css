@@ -152,9 +152,6 @@ hr{
 .bbt-lgray{
     border-bottom: 1px solid #dddddd;
 }
-/* .bd-gray{
-    border: 1px solid #dddddd;
-} */
 
 /* **************************************** *
  * Margin & padding & gap
@@ -180,6 +177,9 @@ hr{
 .mb16{
     margin-bottom: 16px;
 }
+.mb8{
+    margin-bottom: 8px;
+}
 .mb40{
     margin-bottom: 40px;
 }
@@ -188,6 +188,15 @@ hr{
 }
 .mr40{
     margin-right: 40px;
+}
+.ml48{
+    margin-left: 48px;
+}
+.pt8{
+    padding-top: 8px;
+}
+.pb16{
+    padding-bottom: 16px;
 }
 .pt64{
     padding-top: 64px;
@@ -213,6 +222,8 @@ hr{
 .g40{
     gap: 40px;
 }
+
+
 .pa4864{
     padding: 48px 64px;
 }
@@ -222,6 +233,7 @@ hr{
 .pa4056{
     padding: 40px 56px;
 }
+
 
 /* **************************************** *
  * GEPS-WEB-BIV-CU01 & GEPS-WEB-SER-ME04
@@ -629,4 +641,68 @@ span.cc{
 }
 .col-table td.main-text > div{
     height: inherit;
+}
+
+/* **************************************** *
+ * GEPS-WEB-SER-TE01
+ * **************************************** */
+.tab-style2 .tab-wrap ul{
+    gap: 0;
+}
+.tab-style2 .tab-wrap ul li{
+    flex: 1;
+    background-color: #F4F5F7;
+}
+.tab-style2 .tab-wrap ul li a{
+    text-align: center;
+}
+
+/* **************************************** *
+ * GEPS-WEB-SER-GU01
+ * **************************************** */
+.flex-btn {
+    flex: 1;
+    /* height: 56px; */
+}
+.flex-btn button{
+    width: 100%;
+    height: 56px;
+}
+
+.table-wrap2 .basic-table.type2 tbody tr td{
+    border-right: 1px solid #dddddd;
+    padding: 12px 24px;
+}
+.table-wrap2 .basic-table.type2 tbody tr td:last-of-type{
+    border-right: none;
+}
+
+.guide-list{
+    color: #666666;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.guide-list ul{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.guide-list ul li{
+    padding-left: 11px;
+    position: relative;
+}
+.guide-list ul li::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    width: 3px;
+    height: 3px;
+    background-color: #999999;
 }
