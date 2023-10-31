@@ -222,6 +222,9 @@ hr{
 .g20{
     gap: 20px;
 }
+.g25{
+    gap: 25px;
+}
 .g32{
     gap: 32px;
 }
@@ -482,7 +485,7 @@ form.write-wrap{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    /* gap: 25px; */
     width: 100%;
     position: relative;
 }
@@ -609,7 +612,6 @@ span.cc{
  * **************************************** */
 .table-top4{
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 .table-top4 .dropdown-group .dropdown-list-wrap .dropdown-button, .table-top4 button{
@@ -618,7 +620,7 @@ span.cc{
 .table-top4 .dropdown-group .dropdown-list-wrap .dropdown-button{
     width: 100px;
 }
-.table-top4 button{
+.table-top4 .btn-w76{
     width: 76px;
 }
 
