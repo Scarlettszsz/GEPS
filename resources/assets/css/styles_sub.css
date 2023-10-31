@@ -92,9 +92,6 @@
 .jcfs{
     justify-content: flex-start;
 }
-.jcfe{
-    justify-content: flex-end;
-}
 .f1{
     flex: 1;
 }
@@ -156,6 +153,10 @@ hr{
 }
 .bbt-lgray{
     border-bottom: 1px solid #dddddd;
+}
+
+.none-border{
+    border: none;
 }
 
 /* **************************************** *
@@ -238,6 +239,9 @@ hr{
 .pa4056{
     padding: 40px 56px;
 }
+.pa3240{
+    padding: 32px 40px;
+}
 
 
 /* **************************************** *
@@ -272,7 +276,7 @@ hr{
     display: flex;
     font-size: 20px;
     line-height: 28px;
-    font-weight: 500;
+    font-weight: 600;
 }
 .count-wrap .count{
     display: flex;
@@ -792,3 +796,80 @@ span.cc{
 .input_file_warp .file-group label{
     height: 40px;
 }
+
+/* **************************************** *
+ * GEPS-WEB-SER-SE01
+ * **************************************** */
+.table-input-modal-btn{
+    height: 100%;
+}
+.table-input-modal-btn button{
+    border: none;
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    height: inherit;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.modal-content .modal-body form.write-wrap{
+    padding: 0;
+}
+.modal-content .modal-body form.write-wrap .input-group input{
+    text-align: left;
+}
+
+.app-name-group .app-wrap .app-top .app-name-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+.app-name-group .app-wrap .app-top .app-name-wrapper .app-name-wrap{
+    display: flex;
+    gap: 16px;
+}
+.app-name-group .app-wrap .app-top .app-name-wrapper .app-name-wrap i{
+    width: 40px;
+    height: 40px;
+}
+.app-name-group .app-wrap .app-top .app-name-wrapper .app-name-wrap .app-name p:first-of-type{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+}
+.app-name-group .app-wrap .app-top .app-name-wrapper .app-name-wrap .app-name p:last-of-type{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    gap: 4px;
+}
+.app-name-group .app-wrap .app-top .app-name-wrapper .app-ver-wrapper{
+    display: flex;
+    align-items: center;
+    width: 184px;
+    justify-content: space-between;
+}
+.app-name-group .app-wrap .app-top .app-name-wrapper .app-ver-wrapper .app-ver-wrap{
+    gap: 8px;
+}
+.app-name-group .app-wrap .app-top .app-name-wrapper .app-ver-wrapper ul li:nth-child(1){
+    border: none;
+    padding: 0;
+}
+.app-name-group .app-wrap .app-top .app-name-wrapper .app-ver-wrapper ul li:nth-child(2){
+    padding: 0;
+}
+.app-ver-wrapper .app-ver-wrap{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.app-ver-wrapper .app-ver-wrap li:first-of-type{
+    color: #999999;
+}
+.app-ver-wrapper .app-ver-wrap li:nth-of-type(2){
+    color: #000000;
+}
+.app-ver-wrapper button{
+    border: none;
+} 
