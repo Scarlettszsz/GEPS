@@ -823,16 +823,19 @@ span.cc{
     display: flex;
     justify-content: space-between;
     flex: 1;
+    align-items: center;
 }
 .app-name-group .app-wrap .app-top .app-name-wrapper .app-name-wrap{
     display: flex;
     gap: 16px;
 }
-.app-name-group .app-wrap .app-top .app-name-wrapper .app-name-wrap i{
+.app-name-group .app-wrap .app-top .app-name-wrapper .app-name-wrap i,
+.app-name-group .app-wrap .app-top .app-name-wrapper .app-name-wrap2 i{
     width: 40px;
     height: 40px;
 }
-.app-name-group .app-wrap .app-top .app-name-wrapper .app-name-wrap .app-name p:first-of-type{
+.app-name-group .app-wrap .app-top .app-name-wrapper .app-name-wrap .app-name p:first-of-type,
+.app-name-group .app-wrap .app-top .app-name-wrapper .app-name-wrap2 .app-name-left .app-name p{
     font-size: 15px;
     font-weight: 600;
     line-height: 22px;
@@ -846,25 +849,26 @@ span.cc{
 .app-name-group .app-wrap .app-top .app-name-wrapper .app-ver-wrapper{
     display: flex;
     align-items: center;
-    width: 184px;
     justify-content: space-between;
 }
 .app-name-group .app-wrap .app-top .app-name-wrapper .app-ver-wrapper .app-ver-wrap{
     gap: 8px;
 }
-.app-name-group .app-wrap .app-top .app-name-wrapper .app-ver-wrapper ul li:nth-child(1){
+.app-name-group .app-wrap .app-top .app-name-wrapper .app-ver-wrapper ul li:nth-child(1),
+.app-name-group .app-wrap .app-top .app-name-wrapper .app-name-wrap2 ul li:nth-child(1),
+.app-name-group .app-wrap .app-top .app-name-wrapper .app-name-wrap2 ul li:nth-child(2){
     border: none;
     padding: 0;
 }
-.app-name-group .app-wrap .app-top .app-name-wrapper .app-ver-wrapper ul li:nth-child(2){
-    padding: 0;
-}
-.app-ver-wrapper .app-ver-wrap{
+.app-ver-wrapper .app-ver-wrap,
+.app-ver-wrapper .app-name-wrap2 .app-name-left .app-name ul,
+.app-timer{
     font-size: 13px;
     font-weight: 400;
     line-height: 18px;
 }
-.app-ver-wrapper .app-ver-wrap li:first-of-type{
+.app-ver-wrapper .app-ver-wrap li:first-of-type,
+.app-name-wrap2 .app-name-left .app-name ul{
     color: #999999;
 }
 .app-ver-wrapper .app-ver-wrap li:nth-of-type(2){
@@ -872,4 +876,106 @@ span.cc{
 }
 .app-ver-wrapper button{
     border: none;
-} 
+}
+
+/* **************************************** *
+ * GEPS-WEB-SER-SE02
+ * **************************************** */
+.write-wrap-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.write-wrap-top span{
+    color: #666666;
+    text-align: right;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.app-name-wrap2{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.app-name-wrap2 .app-name-left{
+    display: flex;
+    gap: 16px;
+    width: 160px;
+}
+.app-name-wrap2 .app-name-right{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.app-name-group .app-wrap .app-top .app-name-wrapper .app-name-wrap2 ul{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.desc-14{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.app-timer{
+    color: #666666;
+}
+
+/* TOGGLE */
+.toggle-group label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+.toggle-group input[type="checkbox"] {
+    appearance: none;
+    position: relative;
+    background-color: #dddddd;
+    border-color: #dddddd;
+    border-radius: 15px;
+    width: 44px;
+    height: 24px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.toggle-group input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    transform: scale(0.8);
+    background-color: #ffffff;
+    transition: left 250ms linear;
+    box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, .2);
+}
+.toggle-group input[type="checkbox"]:checked {
+    background-color: #004F9D;
+    border-color: #004F9D;
+}
+.toggle-group input[type="checkbox"]:checked::before {
+    background-color: white;
+    left: 20px;
+}
+.toggle-group input[type="checkbox"]:disabled {
+    background-color: #dddddd;
+    border-color: #dddddd;
+    cursor: not-allowed;
+}
+.toggle-group input[type="checkbox"]:disabled:before {
+    background-color: #2B2B2B;
+    opacity: 0.3;
+}
+.toggle-group input[type="checkbox"]:disabled + span {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+.toggle-group input[type="checkbox"]:focus-visible {
+    outline-offset: 1px;
+    outline: 1px solid #004F9D;
+}
