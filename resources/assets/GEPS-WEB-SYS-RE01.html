@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공무원연금공단</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="header-top-wrap">
+                <div class="container">
+                    <div class="header-top">
+                        <ul>
+                            <li>
+                                <i class="i i-user"></i>
+                                <a href="#">관리자</a>님 (접속 : 2023-07-17 15:19:02)
+                            </li>
+                            <li>
+                                <i class="i i-clock"></i><span>00:29:49</span>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-mini btn-outline-gray">로그아웃</button>
+                        <!-- <a href="#">로그인</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom-wrap">
+                <div class="container">
+                    <div class="header-bottom">
+                        <a href="#" class="header-logo">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                        <div class="header-right">
+                            <nav class="header-navbar">
+                                <ul>
+                                    <li><a href="#">신상조사</a></li>
+                                    <li><a href="#">생체정보 등록현황</a></li>
+                                    <li><a href="#">VC 발급현황</a></li>
+                                    <li><a href="#">통계조회</a></li>
+                                    <li class="active"><a href="#">서비스 관리</a></li>
+                                    <li><a href="#">시스템관리</a></li>
+                                </ul>
+                            </nav>
+                            <button type="button" class="header-menu">
+                                <i class="i i-menu"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-sub-wrap">
+                <div class="container">
+                    <div class="header-sub-navbar">
+                        <div class="col-2">
+                            <h5 class="title">신상조사</h5>
+                            <ul>
+                                <li><a href="#">신상조사 실시현황</a></li>
+                                <li><a href="#">신상조사 등록관리</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="title">생체정보 등록현황</h5>
+                            <ul>
+                                <li><a href="#">생체정보 등록현황</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="title">VC 발급현황</h5>
+                            <ul>
+                                <li><a href="#">VC 발급현황</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="title">통계조회</h5>
+                            <div class="col-group">
+                                <button class="dropdown-button" data-target="subNav01">신상조사 통계</button>
+                                <ul id="subNav01" class="dropdown-list">
+                                    <li><a href="#">신상조사 실시/응답</a></li>
+                                    <li><a href="#">응답 소요시간</a></li>
+                                    <li><a href="#">신상조사 통계지표</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-group">
+                                <button class="dropdown-button" data-target="subNav02">서비스 통계</button>
+                                <ul id="subNav02" class="dropdown-list">
+                                    <li><a href="#">VC 발급현황</a></li>
+                                    <li><a href="#">연금증 발급현황</a></li>
+                                    <li><a href="#">OCR 본인인증 신분증</a></li>
+                                    <li><a href="#">DID 검증이력</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-group">
+                                <button class="dropdown-button active">사용자 통계</button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="title">서비스 관리</h5>
+                            <ul>
+                                <li><a href="#">공지사항 관리</a></li>
+                                <li><a href="#">FAQ 관리</a></li>
+                                <li><a href="#">팝업 관리</a></li>
+                                <li><a href="#">메시징 관리</a></li>
+                                <li><a href="#">서비스 이용약관 관리</a></li>
+                                <li><a href="#">생체정보 안내기간 설정</a></li>
+                                <li><a href="#">신상조사 안내관리</a></li>
+                                <li><a href="#">앱서비스 관리</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="title">시스템관리</h5>
+                            <ul>
+                                <li><a href="#">관리자 관리</a></li>
+                                <li><a href="#">메뉴권한 관리</a></li>
+                                <li><a href="#">시스템 이력조회</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="sub-cont">
+                <div class="container">
+                    <div class="search-wrap">
+                        <div class="legend">메뉴권한 관리</div>
+                        <ul class="bread-crumb">
+                            <li><i class="i i-home"></i></li>
+                            <li><i class="i i-arrow-left"></i></li>
+                            <li class="active">시스템관리</li>
+                            <li><i class="i i-arrow-left"></i></li>
+                            <li>메뉴권한 관리</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="table-wrap pt64">
+                        <div class="table-top2 pb16">
+                            <p class="count-wrap">메뉴권한 항목</p>
+                            <div class="btn-wrap">
+                                <button type="button" class="btn btn-sm btn-outline-primary">관리자 등록</button>
+                            </div>
+                        </div>
+                        <table class="basic-table type3" id="">
+                            <colgroup>
+                                <col style="width: 142px;">
+                                <col style="width: 90px;">
+                                <col style="width: 70px;">
+                                <col style="width: 70px;">
+                                <col style="width: 70px;">
+                                <col style="width: 70px;">
+                                <col style="width: 70px;">
+                                <col style="width: 70px;">
+                                <col style="width: 70px;">
+                                <col style="width: 70px;">
+                                <col style="width: 70px;">
+                                <col style="width: 70px;">
+                                <col style="width: 70px;">
+                                <col style="width: 70px;">
+                                <col style="width: 70px;">
+                                <col style="width: 70px;">
+                                <col style="width: 70px;">
+                                <col style="width: 70px;">
+                                <col style="width: 70px;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>관리자ID</th>
+                                    <th>이름</th>
+                                    <th colspan="2">신상조사</th>
+                                    <th>생체정보</th>
+                                    <th colspan="2">VC발급현황</th>
+                                    <th colspan="3">통계</th>
+                                    <th colspan="8">서비스</th>
+                                    <th>시스템</th>
+                                </tr>
+                                <tr class="double-th">
+                                    <th></th>
+                                    <th></th>
+                                    <th>현황</th>
+                                    <th>등록</th>
+                                    <th>현황</th>
+                                    <th>증명서</th>
+                                    <th>DID 검증</th>
+                                    <th>신상조사</th>
+                                    <th>서비스</th>
+                                    <th>사용자</th>
+                                    <th>공지</th>
+                                    <th>FAQ</th>
+                                    <th>팝업</th>
+                                    <th>메시징</th>
+                                    <th>약관</th>
+                                    <th>생체안내</th>
+                                    <th>신상안내</th>
+                                    <th>웹서비스</th>
+                                    <th>로그조회</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>gepsit004</td>
+                                    <td>허광호</td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk01" class="chk" checked disabled>
+                                            <label for="chk01">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk02" class="chk" checked disabled>
+                                            <label for="chk02">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk03" class="chk" checked disabled>
+                                            <label for="chk03">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk04" class="chk" disabled>
+                                            <label for="chk04">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk05" class="chk" disabled>
+                                            <label for="chk05">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk06" class="chk" checked disabled>
+                                            <label for="chk06">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk07" class="chk" checked disabled>
+                                            <label for="chk07">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk08" class="chk" checked disabled  >
+                                            <label for="chk08">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk09" class="chk" checked disabled>
+                                            <label for="chk09">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk10" class="chk" checked disabled>
+                                            <label for="chk10">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk11" class="chk" checked disabled>
+                                            <label for="chk11">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk12" class="chk" checked disabled>
+                                            <label for="chk12">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk13" class="chk" checked disabled>
+                                            <label for="chk13">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk14" class="chk" checked disabled>
+                                            <label for="chk14">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk15" class="chk" checked disabled>
+                                            <label for="chk15">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk16" class="chk" checked disabled>
+                                            <label for="chk16">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk17" class="chk" checked disabled>
+                                            <label for="chk17">기본</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>gepsit004</td>
+                                    <td>허광호</td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk18" class="chk" checked disabled>
+                                            <label for="chk18">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk19" class="chk" checked disabled>
+                                            <label for="chk19">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk20" class="chk" checked disabled>
+                                            <label for="chk20">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk21" class="chk" disabled>
+                                            <label for="chk21">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk22" class="chk" disabled>
+                                            <label for="chk22">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk23" class="chk" checked disabled>
+                                            <label for="chk23">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk24" class="chk" checked disabled>
+                                            <label for="chk24">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk25" class="chk" checked disabled  >
+                                            <label for="chk25">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk26" class="chk" checked disabled>
+                                            <label for="chk26">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk27" class="chk" checked disabled>
+                                            <label for="chk27">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk28" class="chk" checked disabled>
+                                            <label for="chk28">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk29" class="chk" checked disabled>
+                                            <label for="chk29">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk30" class="chk" checked disabled>
+                                            <label for="chk30">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk31" class="chk" checked disabled>
+                                            <label for="chk31">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk32" class="chk" checked disabled>
+                                            <label for="chk32">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk33" class="chk" checked disabled>
+                                            <label for="chk33">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk34" class="chk" checked disabled>
+                                            <label for="chk34">기본</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>gepsit004</td>
+                                    <td>허광호</td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk35" class="chk" checked disabled>
+                                            <label for="chk35">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk36" class="chk" checked disabled>
+                                            <label for="chk36">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk37" class="chk" checked disabled>
+                                            <label for="chk37">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk38" class="chk" disabled>
+                                            <label for="chk38">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk39" class="chk" disabled>
+                                            <label for="chk39">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk40" class="chk" checked disabled>
+                                            <label for="chk40">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk41" class="chk" checked disabled>
+                                            <label for="chk41">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk42" class="chk" checked disabled  >
+                                            <label for="chk42">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk43" class="chk" checked disabled>
+                                            <label for="chk43">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk44" class="chk" checked disabled>
+                                            <label for="chk44">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk45" class="chk" checked disabled>
+                                            <label for="chk45">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk46" class="chk" checked disabled>
+                                            <label for="chk46">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk47" class="chk" checked disabled>
+                                            <label for="chk47">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk48" class="chk" checked disabled>
+                                            <label for="chk48">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk49" class="chk" checked disabled>
+                                            <label for="chk49">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk50" class="chk" checked disabled>
+                                            <label for="chk50">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk51" class="chk" checked disabled>
+                                            <label for="chk51">기본</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>gepsit004</td>
+                                    <td>허광호</td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk52" class="chk" checked disabled>
+                                            <label for="chk52">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk53" class="chk" checked disabled>
+                                            <label for="chk53">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk54" class="chk" checked disabled>
+                                            <label for="chk54">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk55" class="chk" disabled>
+                                            <label for="chk55">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk56" class="chk" disabled>
+                                            <label for="chk56">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk57" class="chk" checked disabled>
+                                            <label for="chk57">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk58" class="chk" checked disabled>
+                                            <label for="chk58">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk59" class="chk" checked disabled  >
+                                            <label for="chk59">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk60" class="chk" checked disabled>
+                                            <label for="chk60">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk61" class="chk" checked disabled>
+                                            <label for="chk61">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk62" class="chk" checked disabled>
+                                            <label for="chk62">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk63" class="chk" checked disabled>
+                                            <label for="chk63">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk64" class="chk" checked disabled>
+                                            <label for="chk64">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk65" class="chk" checked disabled>
+                                            <label for="chk65">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk66" class="chk" checked disabled>
+                                            <label for="chk66">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk67" class="chk" checked disabled>
+                                            <label for="chk67">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk68" class="chk" checked disabled>
+                                            <label for="chk68">기본</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>gepsit004</td>
+                                    <td>허광호</td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk69" class="chk" checked disabled>
+                                            <label for="chk69">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk70" class="chk" checked disabled>
+                                            <label for="chk70">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk71" class="chk" checked disabled>
+                                            <label for="chk71">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk72" class="chk" disabled>
+                                            <label for="chk72">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk73" class="chk" disabled>
+                                            <label for="chk73">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk74" class="chk" checked disabled>
+                                            <label for="chk74">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk75" class="chk" checked disabled>
+                                            <label for="chk75">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk76" class="chk" checked disabled  >
+                                            <label for="chk76">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk77" class="chk" checked disabled>
+                                            <label for="chk77">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk78" class="chk" checked disabled>
+                                            <label for="chk78">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk79" class="chk" checked disabled>
+                                            <label for="chk79">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk80" class="chk" checked disabled>
+                                            <label for="chk80">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk81" class="chk" checked disabled>
+                                            <label for="chk81">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk82" class="chk" checked disabled>
+                                            <label for="chk82">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk83" class="chk" checked disabled>
+                                            <label for="chk83">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk84" class="chk" checked disabled>
+                                            <label for="chk84">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk85" class="chk" checked disabled>
+                                            <label for="chk85">기본</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>gepsit004</td>
+                                    <td>허광호</td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk86" class="chk" checked disabled>
+                                            <label for="chk86">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk87" class="chk" checked disabled>
+                                            <label for="chk87">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk88" class="chk" checked disabled>
+                                            <label for="chk88">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk89" class="chk" disabled>
+                                            <label for="chk89">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk90" class="chk" disabled>
+                                            <label for="chk90">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk91" class="chk" checked disabled>
+                                            <label for="chk91">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk92" class="chk" checked disabled>
+                                            <label for="chk92">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk93" class="chk" checked disabled  >
+                                            <label for="chk93">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk94" class="chk" checked disabled>
+                                            <label for="chk94">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk95" class="chk" checked disabled>
+                                            <label for="chk95">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk96" class="chk" checked disabled>
+                                            <label for="chk96">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk97" class="chk" checked disabled>
+                                            <label for="chk97">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk98" class="chk" checked disabled>
+                                            <label for="chk98">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk99" class="chk" checked disabled>
+                                            <label for="chk99">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk100" class="chk" checked disabled>
+                                            <label for="chk100">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk101" class="chk" checked disabled>
+                                            <label for="chk101">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk102" class="chk" checked disabled>
+                                            <label for="chk102">기본</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>gepsit004</td>
+                                    <td>허광호</td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk103" class="chk" checked disabled>
+                                            <label for="chk103">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk104" class="chk" checked disabled>
+                                            <label for="chk104">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk105" class="chk" checked disabled>
+                                            <label for="chk105">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk106" class="chk" disabled>
+                                            <label for="chk106">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk107" class="chk" disabled>
+                                            <label for="chk107">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk108" class="chk" checked disabled>
+                                            <label for="chk108">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk109" class="chk" checked disabled>
+                                            <label for="chk109">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk110" class="chk" checked disabled  >
+                                            <label for="chk110">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk111" class="chk" checked disabled>
+                                            <label for="chk111">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk112" class="chk" checked disabled>
+                                            <label for="chk112">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk113" class="chk" checked disabled>
+                                            <label for="chk113">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk114" class="chk" checked disabled>
+                                            <label for="chk114">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk115" class="chk" checked disabled>
+                                            <label for="chk115">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk116" class="chk" checked disabled>
+                                            <label for="chk116">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk117" class="chk" checked disabled>
+                                            <label for="chk117">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk118" class="chk" checked disabled>
+                                            <label for="chk118">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk119" class="chk" checked disabled>
+                                            <label for="chk119">기본</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>gepsit004</td>
+                                    <td>허광호</td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk120" class="chk" checked disabled>
+                                            <label for="chk120">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk121" class="chk" checked disabled>
+                                            <label for="chk121">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk122" class="chk" checked disabled>
+                                            <label for="chk122">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk123" class="chk" disabled>
+                                            <label for="chk123">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk124" class="chk" disabled>
+                                            <label for="chk124">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk125" class="chk" checked disabled>
+                                            <label for="chk125">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk126" class="chk" checked disabled>
+                                            <label for="chk126">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk127" class="chk" checked disabled  >
+                                            <label for="chk127">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk128" class="chk" checked disabled>
+                                            <label for="chk128">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk129" class="chk" checked disabled>
+                                            <label for="chk129">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk130" class="chk" checked disabled>
+                                            <label for="chk130">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk131" class="chk" checked disabled>
+                                            <label for="chk131">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk132" class="chk" checked disabled>
+                                            <label for="chk132">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk133" class="chk" checked disabled>
+                                            <label for="chk133">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk134" class="chk" checked disabled>
+                                            <label for="chk134">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk135" class="chk" checked disabled>
+                                            <label for="chk135">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk136" class="chk" checked disabled>
+                                            <label for="chk136">기본</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>gepsit004</td>
+                                    <td>허광호</td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk137" class="chk" checked disabled>
+                                            <label for="chk137">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk138" class="chk" checked disabled>
+                                            <label for="chk138">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk139" class="chk" checked disabled>
+                                            <label for="chk139">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk140" class="chk" disabled>
+                                            <label for="chk140">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk141" class="chk" disabled>
+                                            <label for="chk141">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk142" class="chk" checked disabled>
+                                            <label for="chk142">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk143" class="chk" checked disabled>
+                                            <label for="chk143">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk144" class="chk" checked disabled  >
+                                            <label for="chk144">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk145" class="chk" checked disabled>
+                                            <label for="chk145">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk146" class="chk" checked disabled>
+                                            <label for="chk146">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk147" class="chk" checked disabled>
+                                            <label for="chk147">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk148" class="chk" checked disabled>
+                                            <label for="chk148">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk149" class="chk" checked disabled>
+                                            <label for="chk149">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk150" class="chk" checked disabled>
+                                            <label for="chk150">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk151" class="chk" checked disabled>
+                                            <label for="chk151">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk152" class="chk" checked disabled>
+                                            <label for="chk152">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk153" class="chk" checked disabled>
+                                            <label for="chk153">기본</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>gepsit004</td>
+                                    <td>허광호</td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk154" class="chk" checked disabled>
+                                            <label for="chk154">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk155" class="chk" checked disabled>
+                                            <label for="chk155">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk156" class="chk" checked disabled>
+                                            <label for="chk156">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk157" class="chk" disabled>
+                                            <label for="chk157">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk158" class="chk" disabled>
+                                            <label for="chk158">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk159" class="chk" checked disabled>
+                                            <label for="chk159">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk160" class="chk" checked disabled>
+                                            <label for="chk160">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk161" class="chk" checked disabled  >
+                                            <label for="chk161">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk162" class="chk" checked disabled>
+                                            <label for="chk162">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk163" class="chk" checked disabled>
+                                            <label for="chk163">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk164" class="chk" checked disabled>
+                                            <label for="chk164">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk165" class="chk" checked disabled>
+                                            <label for="chk165">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk166" class="chk" checked disabled>
+                                            <label for="chk166">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk167" class="chk" checked disabled>
+                                            <label for="chk167">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk168" class="chk" checked disabled>
+                                            <label for="chk168">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk169" class="chk" checked disabled>
+                                            <label for="chk169">기본</label>
+                                        </div>
+                                    </td>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk170" class="chk" checked disabled>
+                                            <label for="chk170">기본</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>  
+                        </table>
+                    </div>
+                    <div class="pagination">
+                        <ul>
+                            <li class="double-prev"><a href=""><i class="i i-arrow-double-left"></i></a></li>
+                            <li class="prev"><a href=""><i class="i i-arrow-left-2"></i></a></li>
+                            <li class="active"><a href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">5</a></li>
+                            <li><a href="">6</a></li>
+                            <li><a href="">7</a></li>
+                            <li><a href="">8</a></li>
+                            <li><a href="">9</a></li>
+                            <li><a href="">10</a></li>
+                            <li class="next"><a href=""><i class="i i-arrow-right"></i></a></li>
+                            <li class="double-next"><a href=""><i class="i i-arrow-double-right"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

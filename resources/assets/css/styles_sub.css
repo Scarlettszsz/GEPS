@@ -981,3 +981,13 @@ span.cc{
     outline-offset: 1px;
     outline: 1px solid #004F9D;
 }
+
+.basic-table thead tr.double-th th{
+    background: #F4F5F7;
+    border: solid 1px #dddddd;
+    color: #000000;
+    color: var(--basic-000000, #000);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+}
