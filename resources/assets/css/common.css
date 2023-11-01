@@ -1395,6 +1395,11 @@ h3.title {
     top: 0;
 }
 
+.basic-table.type2 thead tr th,
+.basic-table.type3 thead tr th {
+    position: static;
+}
+
 .basic-table.type2 thead tr th {
     border: 0;
     border-bottom: 1px solid #ddd;
@@ -1427,6 +1432,21 @@ h3.title {
 
 .basic-table tbody tr.selected {
     background: #EFF6FF;
+}
+
+.basic-table.v-table tr th {
+    border-bottom: 1px solid #ddd;
+}
+
+.basic-table.v-table tr th:first-child,
+.basic-table.v-table tr th:nth-child(3),
+.basic-table.v-table tr th:nth-child(5),
+.basic-table.v-table tr td:first-child,
+.basic-table.v-table tr td:nth-child(3),
+.basic-table.v-table tr td:nth-child(5) {
+    background: #1C2C49;
+    border-bottom: 1px solid #3E4B64;
+    color: #fff;
 }
 
 .text-ellipsis {
