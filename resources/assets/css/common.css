@@ -1434,16 +1434,15 @@ h3.title {
     background: #EFF6FF;
 }
 
+.basic-table.v-table {
+    border-top: 1px solid #ddd;
+}
+
 .basic-table.v-table tr th {
     border-bottom: 1px solid #ddd;
 }
 
-.basic-table.v-table tr th:first-child,
-.basic-table.v-table tr th:nth-child(3),
-.basic-table.v-table tr th:nth-child(5),
-.basic-table.v-table tr td:first-child,
-.basic-table.v-table tr td:nth-child(3),
-.basic-table.v-table tr td:nth-child(5) {
+.basic-table.v-table tr th {
     background: #1C2C49;
     border-bottom: 1px solid #3E4B64;
     color: #fff;
