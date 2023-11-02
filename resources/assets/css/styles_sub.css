@@ -996,3 +996,11 @@ span.cc{
     font-weight: 700;
     line-height: 18px;
 }
+
+.basic-table thead tr.double-th th:nth-child(1) {
+    border-left: 0;
+}
+
+.basic-table thead tr.double-th th:last-child {
+    border-right: 0;
+}

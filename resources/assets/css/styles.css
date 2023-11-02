@@ -518,3 +518,16 @@
     font-size: 15px;
     width: 120px;
 }
+
+/* **************************************** *
+ * GGEPS-WEB-SER-ME03
+ * **************************************** */
+.push {
+    background: #F98700;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0 0 0 8px;
+    padding: 2px 8px;
+}
