@@ -14,7 +14,8 @@ $(document).ready(function () {
     });
 
     //dropdown
-    $(".dropdown-button").click(function () {
+    $(".dropdown-button").click(function (e) {
+        e.preventDefault();
         var target = $(this).data("target");
         $("#" + target).toggle();
         $(this).toggleClass("active");
