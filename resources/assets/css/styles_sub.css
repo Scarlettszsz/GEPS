@@ -313,6 +313,11 @@ td.tot{
     -ms-border-radius: 16px;
     -o-border-radius: 16px;
 }
+/* 발신대상 확인 팝업 수정 2023.11.02 */
+.namecheck-modal .modal-body{
+    padding: 32px 40px 24px 32px
+}
+
 
 /* **************************************** *
  * GEPS-WEB-BIV-CU01 & GEPS-WEB-STA-BV01
